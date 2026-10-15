@@ -1,5 +1,7 @@
 # psychology-system
 
+> **✨Masterpiece** —— 仓库的核心代表作之一，入选依据见[仓库根 README](../../README.md#masterpiece)。
+
 > 上游 Skill：[仓颉 cangjie-skill](https://github.com/kangarooking/cangjie-skill)（`RIA-TV++` 流水线，MIT）　｜　许可：[PolyForm Noncommercial 1.0.0](LICENSE)　｜　版本：`v1.0.0`（标签 `psychology-system-v1.0.0`）　｜　版本记录：[CHANGELOG.md](CHANGELOG.md)
 
 基于 28 部心理学、精神分析、心理治疗、社会心理学、亲密关系、深度沟通、脑科学与行为经济学经典著作，按仓颉 `cangjie-skill` (`RIA-TV++` 流水线) 蒸馏构建的全书系可执行 Agent Skill。

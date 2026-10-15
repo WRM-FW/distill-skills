@@ -1,5 +1,7 @@
 # nsca-5th
 
+> **✨Masterpiece** —— 仓库的核心代表作之一，入选依据见[仓库根 README](../../README.md#masterpiece)。
+
 > 上游 Skill：[仓颉 cangjie-skill](https://github.com/kangarooking/cangjie-skill)（`RIA-TV++` 流水线，MIT）　｜　许可：[PolyForm Noncommercial 1.0.0](LICENSE)　｜　版本：`v1.0.0`（标签 `nsca-5th-v1.0.0`）　｜　版本记录：[CHANGELOG.md](CHANGELOG.md)
 
 基于美国国家体能协会（NSCA）教材 *Essentials of Strength Training and Conditioning, 5th Edition*
