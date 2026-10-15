@@ -150,7 +150,8 @@ distill-skills/
   gh release create <skill-name>-v<X.Y.Z> --title "<skill-name> vX.Y.Z" --notes "<本版变化 / 来源 / 许可>"
   ```
 
-- **历史标签处置**：原仓库的裸 `v1.0.0` 已删除，由 `persona-luoxiang-v1.0.0`（指向同一内容提交）取代。
+- **历史标签处置**：原仓库的裸 `v1.0.0` 及其 Release 已删除，由 `persona-luoxiang-v1.0.0` 取代；
+  新标签指向清理与改签之后的提交（`skills/persona-luoxiang/CHANGELOG.md` 记了这次变更的内容差异）。
 - 版本号起点统一为 `v1.0.0`：本次入库的 7 个 Skill 各建一个初始 Release。
 
 ## 安装
