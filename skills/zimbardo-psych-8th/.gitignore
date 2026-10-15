@@ -1,0 +1,16 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# Editor / IDE directories
+.vscode/
+.idea/
+*.swp
+*.swo

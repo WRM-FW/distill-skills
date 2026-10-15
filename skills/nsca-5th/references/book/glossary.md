@@ -1,0 +1,72 @@
+# GLOSSARY: NSCA 5th Edition Standardized Terminology, Equations, and Conversions
+
+## Core Equations and Quantitative Definitions
+
+- **1-Repetition Maximum (1RM)**: Greatest amount of weight that can be lifted with proper technique for only one repetition.
+- **2-for-2 Rule**: Conservative load progression rule stating that if an athlete completes >=2 repetitions over the assigned repetition goal in the last set for 2 consecutive workouts, weight should be added in the next session.
+- **Accentuated Eccentric Loading (AEL)**: Variable resistance strategy applying a heavier load during the eccentric phase (submaximal 60-90% 1RM, maximal 100% 1RM, or supramaximal 105-120% 1RM via weight releasers) and a lighter load during the concentric phase to overcome the eccentric strength deficit.
+- **Active Flat Foot ("Credit Card Rule")**: Plyometric and sprinting ground-contact technique in which the ankle is dorsiflexed in flight and actively plantarflexed just before touchdown so the midfoot/forefoot contacts the ground with high gastrocnemius-soleus stiffness while the heel remains slightly off the ground (enough to slide a credit card underneath).
+- **Allometric Scaling / Classic Strength-to-Mass Formula**: Divides load lifted by `body mass^(2/3)` (`Load / BW^0.67`) to account for the geometric scaling of muscle cross-sectional area (`L^2`, force) versus body volume/mass (`L^3`).
+- **Amortization Phase**: Phase II of the Stretch-Shortening Cycle (time between the end of eccentric lengthening and initiation of concentric shortening). Prolonged amortization dissipates stored elastic energy as heat (e.g., 0.35 s pause loses 25% elastic energy; 1.0 s loses 55%; 1.5 s loses 70%).
+- **Athletic Motor Skill Competencies (AMSC)**: Foundational movement spectrum for youth athletic development (`Figure 7.4`): lower-body bilateral, lower-body unilateral, upper-body pushing, upper-body pulling, core bracing, jumping/landing/rebounding, acceleration/deceleration/reacceleration, and fundamental movement skills.
+- **Cardiac Output (Q) & Fick Equation**:
+  - `Q (L/min) = Stroke Volume (SV) x Heart Rate (HR)`
+  - `VO2 = Q x (a-vO2 difference)`
+  - `1 MET = 3.5 mL O2 / kg / min`
+- **Change-of-Direction (COD) Deficit**: `5-0-5 COD test time (s) - 10 m linear sprint time (s)`, isolating the time cost of braking and turning independent of linear sprint speed.
+- **Chain & Band Variable Resistance Load Calculation**:
+  - `Target Barbell Load = Prescribed Constant RM Load - [(Top Chain/Band Resistance + Bottom Chain/Band Resistance) / 2]`
+  - Hooke's Law for elastic bands: `Tension = Stiffness (k) x Deformation (d)`.
+- **Complex Training Taxonomies (`Ch 19`)**:
+  - **Contrast Training**: Alternating high-load resistance sets and high-velocity plyometric sets in a set-by-set fashion (e.g., heavy bench press alternated with clap push-ups).
+  - **Ascending Complex**: High-velocity plyometric sets completed *before* high-force resistance sets.
+  - **Descending Complex**: All high-force resistance sets completed *before* executing high-velocity plyometric sets.
+- **Cunningham Resting Metabolic Rate (RMR) Equation**:
+  - `RMR (kcal/day) = 500 + 22 x Fat-Free Mass (kg)`
+  - `Total Daily Energy Expenditure (TDEE) = RMR x Physical Activity Level (PAL) Coefficient` (`Sedentary 1.00`, `Low active 1.11/1.12`, `Active 1.25/1.27`, `Very active 1.48/1.45` for M/F).
+- **DAPRE (Daily Adjustable Progressive Resistive Exercise)**: Knight's 4-set autoregulated rehabilitation protocol: Set 1 = 10 reps @ 50% working 1RM; Set 2 = 6 reps @ 75%; Set 3 = max reps @ 100%; Set 4 and next session Set 3 adjusted by Set 3 reps completed (`0-2`, `3-4`, `5-6`, `7-10`, `>=11`).
+- **Effect Size (ES) & Smallest Worthwhile Change (SWC)**:
+  - `ES = (Mean_post - Mean_pre) / SD_pre` (`0.2 = small`, `0.6 = moderate`, `1.2 = large`, `2.0 = very large`)
+  - `SWC = 0.2 x Between-Subject SD`
+  - `Z-score = (Individual Score - Group Mean) / Group SD`
+- **Energy Availability (EA) & RED-S**:
+  - `EA (kcal/kg FFM/day) = [Energy Intake (kcal) - Exercise Energy Expenditure (kcal)] / Fat-Free Mass (kg)`
+  - Optimal health/performance: `~45 kcal/kg FFM/day`; clinical threshold for Relative Energy Deficiency in Sport (RED-S): `< 30 kcal/kg FFM/day`.
+- **Glycemic Index (GI) & Glycemic Load (GL)**:
+  - `GL = (GI x Available Carbohydrate per Serving [g]) / 100`
+  - Low GI `< 55`; Medium GI `55-69`; High GI `>= 70`.
+- **Heart Rate Predictions & Blood Pressure Equations (`Ch 1 & 21`)**:
+  - Traditional Max HR: `HRmax = 220 - Age` (`SD = +/-10-12 bpm`)
+  - Tanaka Meta-Analysis Max HR: `HRmax = 208 - (0.7 x Age)`
+  - Karvonen Target HR: `THR = [(HRmax - RHR) x %Intensity] + RHR`
+  - Rate-Pressure Product (Double Product): `RPP = HR x Systolic BP`
+  - Mean Arterial Pressure: `MAP = [(SBP - DBP) / 3] + DBP`
+- **Impulse-Momentum Relationship & Vertical Jump Takeoff Velocity (`Ch 2`)**:
+  - Linear: `Impulse = Force x dt = m x dv`
+  - Rotational: `Angular Impulse = Torque x dt = dL (change in angular momentum)`
+  - Vertical Jump Height from Takeoff Velocity (TOV): `Jump Height (m) = TOV^2 / (2 x 9.81)`; `TOV (m/s) = sqrt(2 x 9.81 x Jump Height)`
+- **Maximal Aerobic Speed (MAS) VO2max Estimate (`Ch 14`)**:
+  - `Estimated VO2max (mL/kg/min) = 3.5 x MAS (km/h)`
+- **Mechanical Work, Energy, and Power (`Ch 2`)**:
+  - `Work (J) = Force (N) x Displacement (m)`
+  - `Potential Energy (J) = m x g x h` (`g = 9.81 m/s^2`); `Kinetic Energy (J) = 0.5 x m x v^2`
+  - `Power (W) = Work (J) / Time (s) = Force (N) x Velocity (m/s)`
+- **Minimal Essential Strain (MES) (`Ch 5`)**: Threshold mechanical strain (~1/10 of bone fracture force) required to signal osteoblast migration and new periosteal bone formation; saturates at ~30-35 high-magnitude loading repetitions per session.
+- **Postactivation Performance Enhancement (PAPE) (`Ch 15`)**: Acute transient enhancement of voluntary muscular force/power following a low-volume, high-intensity conditioning contraction (e.g., 60-90% 1RM squat/bench with 3-12 min rest).
+- **RAMP Warm-Up Protocol (`Ch 15`)**: Three-phase warm-up architecture: (1) **Raise** (body temp, HR, blood flow via sport-specific locomotor patterns), (2) **Activate and Mobilize** (dynamic motor control through key movement patterns), (3) **Potentiate** (progressive intensity build-up to competition velocity/force).
+- **Reactive Strength Index (RSI) & Modified RSI (mRSI) (`Ch 14 & 18`)**:
+  - Drop/Rebound Jump: `RSI = Jump Height (m or cm) / Ground Contact Time (s)`
+  - Countermovement Jump: `mRSI = Jump Height (m) / Time to Takeoff (s)`
+- **Set-Repetition Best (SRB) & Repetitions in Reserve (RIR) (`Ch 18`)**:
+  - **RIR**: Subjective count of additional repetitions an athlete could perform at the end of a set (`0 RIR = RPE 10 = 100% effort`; `1 RIR = RPE 9 = 95-99%`; `2 RIR = RPE 8 = 90-94%`; `3 RIR = RPE 7 = 85-89%`; `4 RIR = RPE 5-6 = 80-84%`).
+  - **SRB**: Prescribing loads as 5% relative intensity ranges (e.g., 85-90% of the maximum load sustainable for a specific multi-set x rep scheme, such as `3x5` or `3x10`).
+- **SI and Traditional Unit Conversions (`Table 2.1`)**:
+  - `1 m = 3.28 ft` (`1 ft = 0.3048 m`); `1 km = 0.621 mi` (`1 mi = 1.609 km`)
+  - `1 rad = 57.3 deg` (`1 deg = 0.0175 rad`)
+  - `1 m/s = 2.24 mph` (`1 mph = 0.447 m/s`)
+  - `1 N = 0.225 lbf` (`1 lbf = 4.45 N`); `1 kg = 2.205 lb` (`1 lb = 0.4535 kg`)
+  - `1 J (or N*m) = 0.738 ft-lb` (`1 ft-lb = 1.356 J`); `1 W = 0.0013 hp` (`1 hp = 745.7 W`)
+- **Titin (`Ch 2`)**: Giant third sarcomeric filament (alongside actin and myosin) spanning from Z-disk to M-band; stiffens in the presence of Ca2+ during eccentric stretch beyond resting length to add passive/active force and trigger hypertrophic mechanotransduction.
+- **Volume-Load & Volume-Load Displacement (`Ch 18`)**:
+  - `Volume-Load = Sets x Repetitions x Weight Lifted` (use `System Mass = Body Mass + External Load` for ballistic jumps)
+  - `Volume-Load Displacement = Sets x Repetitions x Weight Lifted x Barbell Displacement (m)`

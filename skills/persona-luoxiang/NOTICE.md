@@ -2,7 +2,7 @@
 
 persona-luoxiang · 罗翔 Persona Skill
 
-本仓库的 MIT License（见 `LICENSE`）仅覆盖本仓库的原创内容，不覆盖、
+本 Skill 目录的 MIT License（见 `LICENSE`）仅覆盖本目录的原创内容，不覆盖、
 也不重新授权以下部分：
 
 - **Distilly** — Copyright (c) 2026 titanwings，MIT License

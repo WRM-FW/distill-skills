@@ -1,0 +1,23 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor & IDE directories
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary & build artifacts
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+dist/
+build/
