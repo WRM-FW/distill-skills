@@ -4,7 +4,8 @@
 > 汇聚由经典书籍、专业课程、实用工具及人物语料中深度蒸馏的 Agent Skills。通过结构化与能力化沉淀，打造开箱即用的个人外脑知识资产。
 > * 核心代表作：psychology-system（心理学体系化技能）、nsca-5th（体能与力量训练科学）
 
-下面「✨Masterpiece」小节即这两个核心代表作的入口，仓库内所有精选标识统一写作 `✨Masterpiece`。
+下面「✨Masterpiece」小节收录这两个核心代表作。仓库内的最高推荐标识统一写作 `✨Masterpiece`，
+不再使用其它叫法。
 
 - 仓库地址：<https://github.com/WRM-FW/distill-skills>（原名 `persona-luoxiang`，GitHub 自动重定向旧链接）
 - 布局：`skills/<skill-name>/`，一个 Skill 一个目录，仓库根只放索引与规范
