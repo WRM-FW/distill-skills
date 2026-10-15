@@ -94,7 +94,7 @@ skills/persona-luoxiang/
 ├── manifest.json / meta.json    # Distilly 引擎清单与元数据（id / name / version 已对齐本 Skill 的规范身份）
 ├── references/research/         # 11 份调研笔记（01-06 六维度）
 ├── knowledge/research/
-│   ├── reviews/                 # 两份独立验证报告（见第六节）
+│   ├── reviews/                 # 三份独立验证报告（见第六节）
 │   └── merged/summary.md        # merge_research 汇总（11 文件 / 71 URL / 6 维度 / 0 长引用）
 └── scripts/
     ├── normalize_research_bullets.py   # 把调研笔记里的有序列表规范成 `- `（merge 工具只识别无序列表）
@@ -114,8 +114,11 @@ skills/persona-luoxiang/
 | frontmatter 与元数据 | `scripts/validate_skill_yaml.mjs` | PASS（name 为合法 kebab-case、description 存在、布尔键解析正确、无引用块/代码围栏/时间码） |
 | 已知答案测试 | 独立评审 Agent | Verdict PASS，8 题平均 1.875，2 个无依据探针均未编造 |
 | 边界与反模式测试 | 独立评审 Agent | Status PASS，A 组 1.75 / B 组 1.75，盲测辨识度 中，结构 13 项全覆盖 |
+| 输出纪律复测 | 独立评审 Agent | Verdict PASS，5 题禁语命中 0 次、实质度均值 2.0；记录了一处中段落点风险（自谦一旦挪到首句即违规） |
 
-两份验证报告在 `knowledge/research/reviews/`：`validation.md`（已知答案测试）、`research_audit.md`（边界、反模式、盲测、结构）。报告里提出的问题已回灌进 `SKILL.md`：补上死刑立场这一条自我修正记录、给「不给鼓励性承诺」补判据、把即兴应答四段骨架与收束句式写进表达DNA、增加「不制造金句 / 自谦不做默认开场收尾 / 中道只用于价值问题 / 不评价真实在世人物」等输出纪律。
+三份验证报告在 `knowledge/research/reviews/`：`validation.md`（已知答案测试）、
+`research_audit.md`（边界、反模式、盲测、结构）、`output_discipline_retest.md`（输出纪律复测）。
+报告里提出的问题已回灌进 `SKILL.md`：补上死刑立场这一条自我修正记录、给「不给鼓励性承诺」补判据、把即兴应答四段骨架与收束句式写进表达DNA、增加「不制造金句 / 自谦不做默认开场收尾 / 中道只用于价值问题 / 不评价真实在世人物」等输出纪律。
 
 ## 七、边界与免责
 
