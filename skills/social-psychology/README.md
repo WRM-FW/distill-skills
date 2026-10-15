@@ -1,5 +1,7 @@
 # Social Psychology Skill (`social-psychology`)
 
+> 上游 Skill：[仓颉 cangjie-skill](https://github.com/kangarooking/cangjie-skill)（`RIA-TV++` 流水线，MIT）　｜　许可：[PolyForm Noncommercial 1.0.0](LICENSE)　｜　版本：`v1.0.0`（标签 `social-psychology-v1.0.0`）　｜　版本记录：[CHANGELOG.md](CHANGELOG.md)
+
 基于戴维·迈尔斯（David G. Myers）经典著作《社会心理学》（*Social Psychology*, 第 11 版，侯玉波、乐国安、张智勇等译）与 **Cangjie RIA-TV++（仓颉拆书蒸馏框架）** 构建的可执行社会心理学诊断、行为干预与决策防错 Agent Skill。
 
 ## 1. 项目简介（Overview）
@@ -17,7 +19,7 @@
 social-psychology/
 ├── SKILL.md                                                                 # 主路由文件（YAML 元数据 + 7大核心公理 + 12能力卡路由表 + 4步诊断闭环）
 ├── README.md                                                                # GitHub 仓库说明文档（用途、目录结构、安装使用方法与依赖说明）
-├── LICENSE                                                                  # MIT 开源许可证
+├── LICENSE                                                                  # PolyForm Noncommercial 1.0.0 许可证
 ├── .gitignore                                                               # Git 忽略规则配置
 └── references/                                                              # 渐进式披露参考知识库
     ├── book/

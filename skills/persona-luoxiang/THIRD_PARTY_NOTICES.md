@@ -13,7 +13,7 @@
 - 本项目中的复用：
   - `persona.md` / `work.md` 的分层文档结构（Layer 0-7、Agentic Protocol、能力层）
     由 Distilly 的 celebrity prompt 管线（`distilly.celebrity.v1` 预设）生成；
-  - `manifest.json` / `meta.json` / `.build/meta.json` 的 schema、字段与产物清单
+  - `manifest.json` / `meta.json` 的 schema、字段与产物清单
     机制来自 Distilly 的 `skill_writer`；
   - 调研汇总与结构自检调用了 Distilly 的 `merge_research.py` 与
     `quality_check.py`（--profile budget-friendly，13/13 PASS）；

@@ -1,8 +1,10 @@
 # zimbardo-psych-8th
 
+> 上游 Skill：[仓颉 cangjie-skill](https://github.com/kangarooking/cangjie-skill)（`RIA-TV++` 流水线，MIT）　｜　许可：[PolyForm Noncommercial 1.0.0](LICENSE)　｜　版本：`v1.0.0`（标签 `zimbardo-psych-8th-v1.0.0`）　｜　版本记录：[CHANGELOG.md](CHANGELOG.md)
+
 > **《津巴多普通心理学（第8版）》= *Psychology: Core Concepts (8th Edition)* 仓颉 RIA-TV++ 整书蒸馏 Agent Skill**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/License-PolyForm%20NC-blue.svg)](LICENSE)
 [![Pipeline: Cangjie RIA-TV++](https://img.shields.io/badge/Pipeline-Cangjie%20RIA--TV%2B%2B-success.svg)](SKILL.md)
 [![Source: Zimbardo 8th Ed.](https://img.shields.io/badge/Source-Psychology%3A%20Core%20Concepts%208e-orange.svg)](references/book/overview.md)
 
@@ -25,7 +27,7 @@
 ```text
 zimbardo-psych-8th/
 ├── README.md                  # 仓库说明文档（用途、目录结构、安装与使用方法、能力路由表）
-├── LICENSE                    # MIT 许可证
+├── LICENSE                    # PolyForm Noncommercial 1.0.0 许可证
 ├── .gitignore                 # Git 忽略规则配置
 ├── SKILL.md                   # Skill 核心路由入口（含 YAML Frontmatter、触发边界、4 步主工作流与防坑指南）
 ├── references/

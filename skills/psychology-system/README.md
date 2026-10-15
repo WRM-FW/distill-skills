@@ -1,5 +1,7 @@
 # psychology-system
 
+> 上游 Skill：[仓颉 cangjie-skill](https://github.com/kangarooking/cangjie-skill)（`RIA-TV++` 流水线，MIT）　｜　许可：[PolyForm Noncommercial 1.0.0](LICENSE)　｜　版本：`v1.0.0`（标签 `psychology-system-v1.0.0`）　｜　版本记录：[CHANGELOG.md](CHANGELOG.md)
+
 基于 28 部心理学、精神分析、心理治疗、社会心理学、亲密关系、深度沟通、脑科学与行为经济学经典著作，按仓颉 `cangjie-skill` (`RIA-TV++` 流水线) 蒸馏构建的全书系可执行 Agent Skill。
 
 ## 项目简介
@@ -18,7 +20,7 @@
 ```text
 psychology-system/
 ├── README.md                  # 仓库说明文档（用途、目录结构、安装使用与能力总览）
-├── LICENSE                    # MIT 开源许可证
+├── LICENSE                    # PolyForm Noncommercial 1.0.0 许可证
 ├── .gitignore                 # Git 忽略规则配置
 ├── SKILL.md                   # Skill 主路由入口文件（含 YAML Frontmatter 与四步总控流程）
 └── references/
@@ -85,7 +87,9 @@ cp -r distill-skills/skills/psychology-system <你的 Agent Skill 目录>/
 
 ## 许可证
 
-本项目采用 [MIT License](LICENSE) 授权。
+本 Skill 的原创内容采用 [PolyForm Noncommercial License 1.0.0](LICENSE) 授权（SPDX `PolyForm-Noncommercial-1.0.0`）：可用于个人研究、学习与非商业组织用途，禁止商业用途。
+
+上游蒸馏管线为 [cangjie-skill](https://github.com/kangarooking/cangjie-skill)（MIT）；原著文字的版权归出版社与作者，本 Skill 不主张对原著的任何权利。
 
 ---
 

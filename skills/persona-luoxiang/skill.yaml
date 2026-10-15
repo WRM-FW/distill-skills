@@ -147,4 +147,4 @@ artifacts:
   reviews: knowledge/research/reviews/
   scripts: scripts/
 
-license: "原创内容以 MIT License 发布（见 LICENSE）；衍生自上游 Distilly 与 nuwa-skill（均为 MIT）的部分按其许可证处理。罗翔本人的言论、姓名与形象权益不在授权范围内；涉及视频字幕素材的引用与再分发请遵守原视频平台条款。本项目未获罗翔本人授权或认可。"
+license: "原创内容以 PolyForm Noncommercial License 1.0.0 发布（见 LICENSE，SPDX: PolyForm-Noncommercial-1.0.0）；衍生自上游 Distilly 与 nuwa-skill（均为 MIT）的部分按其 MIT 许可证处理，声明见 NOTICE.md 与 THIRD_PARTY_NOTICES.md。罗翔本人的言论、姓名与形象权益不在授权范围内；涉及视频字幕素材的引用与再分发请遵守原视频平台条款。本项目未获罗翔本人授权或认可。"

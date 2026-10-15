@@ -2,7 +2,8 @@
 
 persona-luoxiang · 罗翔 Persona Skill
 
-本 Skill 目录的 MIT License（见 `LICENSE`）仅覆盖本目录的原创内容，不覆盖、
+本 Skill 目录的原创内容以 PolyForm Noncommercial License 1.0.0 授权（见 `LICENSE`，
+SPDX 标识 `PolyForm-Noncommercial-1.0.0`）。该许可仅覆盖本目录的原创内容，不覆盖、
 也不重新授权以下部分：
 
 - **Distilly** — Copyright (c) 2026 titanwings，MIT License

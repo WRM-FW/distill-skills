@@ -1,5 +1,7 @@
 # nsca-3rd
 
+> 上游 Skill：[仓颉 cangjie-skill](https://github.com/kangarooking/cangjie-skill)（`RIA-TV++` 流水线，MIT）　｜　许可：[PolyForm Noncommercial 1.0.0](LICENSE)　｜　版本：`v1.0.0`（标签 `nsca-3rd-v1.0.0`）　｜　版本记录：[CHANGELOG.md](CHANGELOG.md)
+
 基于美国国家体能协会（NSCA）教材 *Essentials of Strength Training and Conditioning, 3rd Edition*
 （Thomas R. Baechle & Roger W. Earle 主编，全书 22 章），用仓颉 `cangjie-skill`（`RIA-TV++` 流水线）
 蒸馏而成的整书级力量与体能训练 Agent Skill。
@@ -38,7 +40,8 @@ nsca-3rd/
 
 - 不做医疗诊断、处方与临床康复决策；伤病相关只给训练侧的配合方案，转由执业医师与康复专业人员决定。
 - `%1RM`—次数对照表按单组线性衰减，下肢复合动作、器械与高水平运动员会偏离预测值，这一点在 `overview.md` 的局限分析里已标注。
-- 内容源自受版权保护教材的研究性提炼，未随附独立许可证文件；再分发前请自行确认使用权（收录状态见仓库根 README 目录表）。
+- 本 Skill 的原创内容以 [PolyForm Noncommercial License 1.0.0](LICENSE) 授权（SPDX `PolyForm-Noncommercial-1.0.0`），禁止商业用途。
+- 内容是对受版权保护教材的研究性提炼：本许可只覆盖本目录的原创表达，不覆盖、也不重新授权原书文字与图表；再分发前请自行确认对原书内容的使用权。
 
 ---
 

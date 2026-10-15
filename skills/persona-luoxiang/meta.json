@@ -208,5 +208,6 @@
   },
   "created_at": "2026-09-16T12:47:27.192043+00:00",
   "updated_at": "2026-09-16T12:47:27.192043+00:00",
-  "corrections_count": 0
+  "corrections_count": 0,
+  "license": "PolyForm-Noncommercial-1.0.0"
 }

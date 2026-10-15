@@ -1,5 +1,7 @@
 # intimate-relationships-8th
 
+> 上游 Skill：[仓颉 cangjie-skill](https://github.com/kangarooking/cangjie-skill)（`RIA-TV++` 流水线，MIT）　｜　许可：[PolyForm Noncommercial 1.0.0](LICENSE)　｜　版本：`v1.0.0`（标签 `intimate-relationships-8th-v1.0.0`）　｜　版本记录：[CHANGELOG.md](CHANGELOG.md)
+
 > **《亲密关系（第8版）》整书级可执行 Agent Skill（Cangjie RIA-TV++ Pipeline）**
 >
 > 基于萨姆休斯顿州立大学杰出心理学教授 **罗兰·米勒（Rowland S. Miller）** 经典著作《亲密关系（第8版）》（*Intimate Relationships, 8th Edition*，王伟平 译，彭凯平 审校，人民邮电出版社 2024 年 1 月出版，ISBN `978-7-115-63021-6`）全书 14 章、52 个专题专栏与 686 篇新增研究文献蒸馏而成。
@@ -17,7 +19,7 @@
 ```text
 intimate-relationships-8th/
 ├── README.md                     # 项目说明文档（用途、目录结构、能力路由表、安装与使用方法）
-├── LICENSE                       # MIT 许可证与原著学术引用说明
+├── LICENSE                       # PolyForm Noncommercial 1.0.0 许可证与原著学术引用说明
 ├── .gitignore                    # Git 忽略规则配置
 ├── SKILL.md                      # Skill 核心主路由与 4 步执行规程（含 YAML Frontmatter）
 └── references/

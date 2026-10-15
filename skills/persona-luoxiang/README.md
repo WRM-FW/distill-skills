@@ -13,6 +13,8 @@
 | 目录 / 调用名 | `persona-luoxiang` |
 | 入口文件 | `SKILL.md` |
 | 语言 | 简体中文 |
+| 许可证 | PolyForm Noncommercial 1.0.0 |
+| 上游 Skill | [Distilly](https://github.com/titanwings/distilly) · [女娲 nuwa-skill](https://github.com/alchaincyf/nuwa-skill) |
 | 调研截止 | 2026-09-15 |
 
 ## 一、这个 Skill 是什么
@@ -81,7 +83,8 @@ skills/persona-luoxiang/
 ├── SKILL.md                     # 加载入口（自包含，含全部核心内容）
 ├── skill.yaml                   # 权威元数据（Skill ID / 触发词 / 来源 / 边界）
 ├── README.md                    # 本文件
-├── LICENSE                      # MIT（仅覆盖本目录原创内容，见第八、九节）
+├── LICENSE                      # PolyForm Noncommercial 1.0.0（仅覆盖本目录原创内容，见第八、九节）
+├── CHANGELOG.md                 # 版本记录（标签 persona-luoxiang-vX.Y.Z）
 ├── NOTICE.md                    # 上游衍生与素材版权归属声明
 ├── THIRD_PARTY_NOTICES.md       # 上游项目（Distilly / nuwa-skill）许可证与署名声明
 ├── persona.md                   # Distilly 人格层（Layer 0-7 + Agentic Protocol）
@@ -91,10 +94,8 @@ skills/persona-luoxiang/
 ├── manifest.json / meta.json    # Distilly 引擎清单与元数据（id / name / version 已对齐本 Skill 的规范身份）
 ├── references/research/         # 11 份调研笔记（01-06 六维度）
 ├── knowledge/research/
-│   ├── raw/                     # 调研笔记副本（Distilly 约定的输入位置）
 │   ├── reviews/                 # 两份独立验证报告（见第六节）
 │   └── merged/summary.md        # merge_research 汇总（11 文件 / 71 URL / 6 维度 / 0 长引用）
-├── .build/meta.json             # Distilly skill_writer 的输入元数据（用于复现生成）
 └── scripts/
     ├── normalize_research_bullets.py   # 把调研笔记里的有序列表规范成 `- `（merge 工具只识别无序列表）
     ├── validate_skill_yaml.mjs         # 用 DSH 同族 YAML 解析器校验 frontmatter 与元数据
@@ -145,7 +146,7 @@ skills/persona-luoxiang/
   `finalize_distilly_artifacts.py`、`install_to_dsh.py`——为打通 Distilly 产物与
   DSH 加载规范而为本项目新编写，上游仓库中不存在同名文件）、本 README。
 - **Generated / Derived Work（由上游管线生成的结构）**：`persona.md`、`work.md`、
-  `persona_skill.md`、`work_skill.md`、`manifest.json`、`meta.json`、`.build/meta.json`
+  `persona_skill.md`、`work_skill.md`、`manifest.json`、`meta.json`
   ——文档骨架与元数据 schema 来自 Distilly 的 prompt 与 `skill_writer`，
   内容文本为本次对罗翔素材的调研产出。
 - **Third-party（不随本目录重新授权）**：上游两个项目本身不打包进本仓库，
@@ -154,10 +155,14 @@ skills/persona-luoxiang/
 
 ## 九、许可
 
-- 本目录的原创内容（结构、脚本、调研笔记与 Skill 正文）以 **MIT License** 发布（见 `LICENSE` 与 `NOTICE.md`）；
-  其中衍生自 Distilly 与 nuwa-skill 的机制与结构部分同时受两个上游 MIT 许可证约束，
-  许可证要求已按原文保留（见 `THIRD_PARTY_NOTICES.md`）。
-- 上述 MIT 许可**不覆盖**罗翔本人的言论、姓名与形象权益，也不构成对其视频的再授权；
+- 本目录的原创内容（结构、脚本、调研笔记与 Skill 正文）以 **PolyForm Noncommercial License 1.0.0**
+  发布（见 `LICENSE` 与 `NOTICE.md`）：可用于个人学习、研究、实验与非商业组织用途，
+  不得用于商业目的，也不允许再许可或转让。
+- 本目录曾以 MIT 发布（`v1.0.0`，2026-09-22）。切换只向未来生效：
+  已在那份 MIT 许可下取得的副本仍按 MIT 处理，本仓库此后发布的版本一律适用 PolyForm NC。
+- 其中衍生自 Distilly 与 nuwa-skill 的机制与结构部分仍受两个上游 MIT 许可证约束，
+  版权声明与许可文本按原文保留（见 `THIRD_PARTY_NOTICES.md`），不因本目录改签而改变。
+- 上述许可**不覆盖**罗翔本人的言论、姓名与形象权益，也不构成对其视频的再授权；
   原始视频素材版权归原平台与权利人所有。
 - 本目录未打包任何无法确认来源的文件；如下游使用者对个别内容来源有疑问，
   请对照第八节与各文件头部说明。

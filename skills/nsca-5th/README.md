@@ -1,5 +1,7 @@
 # nsca-5th
 
+> 上游 Skill：[仓颉 cangjie-skill](https://github.com/kangarooking/cangjie-skill)（`RIA-TV++` 流水线，MIT）　｜　许可：[PolyForm Noncommercial 1.0.0](LICENSE)　｜　版本：`v1.0.0`（标签 `nsca-5th-v1.0.0`）　｜　版本记录：[CHANGELOG.md](CHANGELOG.md)
+
 基于美国国家体能协会（NSCA）教材 *Essentials of Strength Training and Conditioning, 5th Edition*
 （G. Gregory Haff & N. Travis Triplett 主编，2027，全书 26 章），用仓颉 `cangjie-skill`（`RIA-TV++` 流水线）
 蒸馏而成的整书级力量与体能训练 Agent Skill。
@@ -44,7 +46,8 @@ nsca-5th/
 
 - 不做医疗诊断、手术决策、处方药与临床心理治疗；此类需求转执业医师、RD/CSSD、运动防护师、物理治疗师或临床心理师。
 - 不用于无参数的闲聊式健身建议。
-- 内容源自受版权保护教材的研究性提炼，未随附独立许可证文件；再分发前请自行确认使用权（收录状态见仓库根 README 目录表）。
+- 本 Skill 的原创内容以 [PolyForm Noncommercial License 1.0.0](LICENSE) 授权（SPDX `PolyForm-Noncommercial-1.0.0`），禁止商业用途。
+- 内容是对受版权保护教材的研究性提炼：本许可只覆盖本目录的原创表达，不覆盖、也不重新授权原书文字与图表；再分发前请自行确认对原书内容的使用权。
 
 ---
 
