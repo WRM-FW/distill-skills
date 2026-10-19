@@ -4,7 +4,7 @@
 > 汇聚由经典书籍、专业课程、实用工具及人物语料中深度蒸馏的 Agent Skills。通过结构化与能力化沉淀，打造开箱即用的个人外脑知识资产。
 > * 核心代表作：psychology-system（心理学体系化技能）、nsca-5th（体能与力量训练科学）
 
-下面「✨Masterpiece」小节收录这两个核心代表作。仓库内的最高推荐标识统一写作 `✨Masterpiece`，
+下面「✨Masterpiece」小节收录核心代表作。仓库内的最高推荐标识统一写作 `✨Masterpiece`，
 不再使用其它叫法。
 
 - 仓库地址：<https://github.com/WRM-FW/distill-skills>（原名 `persona-luoxiang`，GitHub 自动重定向旧链接）
@@ -19,7 +19,7 @@
 
 ## ✨Masterpiece
 
-两个当前维护最完整、跨场景复用最多的 Skill。想先试一个，从这里开始。
+三个当前维护最完整、跨场景复用最多的 Skill。想先试一个，从这里开始。
 
 ### 1. `psychology-system` — 跨 28 部心理学典籍的整合路由
 
@@ -54,6 +54,22 @@
 需要更短、参数更集中的经典 `%1RM` 查表版本时看 [`skills/nsca-3rd/`](skills/nsca-3rd/)，
 两者的分工写在它的 README 里。
 
+### 3. `logic-system` — 跨 20 部中外逻辑学著作的推演与论证审计引擎
+
+| 项目 | 值 |
+| --- | --- |
+| 目录 | [`skills/logic-system/`](skills/logic-system/) |
+| 解决的问题 | 概念偷换与自相矛盾、三段论与文恩图检验、真值表与 Fitch 证明、一阶谓词与摹状词辖域、模态/时态/反事实推演、自指与谷堆悖论、穆勒五法与证伪、图尔敏谬误拆解、中国名辩破诡辩、金字塔 MECE、博弈均衡与法律归责 |
+| 来源 | Google Drive「逻辑学」9 部 +「Library」11 部，合计 20 部（陈波、周建武、武宏志、孙中原、诸子百家原典、Magnus、Priest、波普尔、叔本华、康德、明托、高田贵久、高斯与温伯格、罗翔、顾准、李子旸、王则柯、迪克西特与奈尔伯夫、Petzold、康华光与阎石） |
+| 上游 Skill | [kangarooking/cangjie-skill](https://github.com/kangarooking/cangjie-skill)（`RIA-TV++` 流水线，MIT） |
+| 结构 | `SKILL.md` 主路由 + `references/book/{overview,glossary}.md` + 11 张六段式能力卡 + 跨书黄金标尺自检表 |
+| 许可 | PolyForm Noncommercial 1.0.0（原创内容）；原著文字版权归出版社与作者 |
+| 版本 | `logic-system-v1.0.0`，见 [CHANGELOG](skills/logic-system/CHANGELOG.md) |
+| 触发 | `用 logic-system 把「只有努力才能成功；他很努力，所以他一定成功了」符号化并检验，再指出它犯了哪类谬误` |
+
+它和 `psychology-system` 是两条独立主线：逻辑学线管「推得对不对、前提站不站得住」，
+心理学线管「为什么这么想、怎么沟通」。`SKILL.md` 的不适用条款把情绪共情类需求路由到 `psychology-system`。
+
 ---
 
 ## 全部 Skill
@@ -62,6 +78,7 @@
 | --- | --- | --- | --- | --- | --- | --- |
 | [`skills/psychology-system/`](skills/psychology-system/) | 心理学与行为科学整合路由 | 28 部心理学著作 | 12 | [cangjie-skill](https://github.com/kangarooking/cangjie-skill) | PolyForm NC 1.0.0 | `psychology-system-v1.0.0` |
 | [`skills/nsca-5th/`](skills/nsca-5th/) | 力量与体能训练全链 | NSCA 教材第 5 版（26 章） | 12 | [cangjie-skill](https://github.com/kangarooking/cangjie-skill) | PolyForm NC 1.0.0 | `nsca-5th-v1.0.0` |
+| [`skills/logic-system/`](skills/logic-system/) | 形式/非经典/归纳/名辩/结构化/博弈逻辑 | 20 部中西逻辑学著作 | 11 | [cangjie-skill](https://github.com/kangarooking/cangjie-skill) | PolyForm NC 1.0.0 | `logic-system-v1.0.0` |
 | [`skills/nsca-3rd/`](skills/nsca-3rd/) | 力量与体能训练（经典参数） | NSCA 教材第 3 版（22 章） | 10 | [cangjie-skill](https://github.com/kangarooking/cangjie-skill) | PolyForm NC 1.0.0 | `nsca-3rd-v1.0.0` |
 | [`skills/intimate-relationships-8th/`](skills/intimate-relationships-8th/) | 亲密关系诊断与冲突降级 | 米勒《亲密关系（第 8 版）》 | 12 | [cangjie-skill](https://github.com/kangarooking/cangjie-skill) | PolyForm NC 1.0.0 | `intimate-relationships-8th-v1.0.0` |
 | [`skills/social-psychology/`](skills/social-psychology/) | 社会影响、说服与群体决策 | 迈尔斯《社会心理学（第 11 版）》 | 12 | [cangjie-skill](https://github.com/kangarooking/cangjie-skill) | PolyForm NC 1.0.0 | `social-psychology-v1.0.0` |
@@ -70,14 +87,14 @@
 
 ### 上游判定依据（不是凭名称推断）
 
-- **cangjie-skill**：六个 Skill 的 `SKILL.md` 与 README 都自述走「仓颉 `cangjie-skill`（`RIA-TV++` 流水线）」，
+- **cangjie-skill**：七个书籍/教材 Skill 的 `SKILL.md` 与 README 都自述走「仓颉 `cangjie-skill`（`RIA-TV++` 流水线）」，
   其能力卡的 `R / I / A1 / A2 / E / B` 六段、`阶段 0-3`、Triple Verification 与 `references/capabilities/` 目录约定，
   与 [kangarooking/cangjie-skill](https://github.com/kangarooking/cangjie-skill) 的 README 术语逐项对应。
   注意：各 Skill 未内嵌该仓库的提交号或版本号，**具体使用的管线版本待确认**。
 - **Distilly + nuwa-skill**：`persona-luoxiang` 在 `NOTICE.md`、`THIRD_PARTY_NOTICES.md`
   与 README 第八节明确列出了两个上游及其复用范围。
 - 同名的 [Yeadon8888/cangjie-skill](https://github.com/Yeadon8888/cangjie-skill) 是「基于女娲架构」的人物蒸馏引擎，
-  与这六个整书/教材 Skill 的产物形态不符，故未采用。若你有确切的管线版本记录，替换上表链接即可。
+  与这七个整书/教材 Skill 的产物形态不符，故未采用。若你有确切的管线版本记录，替换上表链接即可。
 
 ---
 
@@ -152,7 +169,7 @@ distill-skills/
 
 - **历史标签处置**：原仓库的裸 `v1.0.0` 及其 Release 已删除，由 `persona-luoxiang-v1.0.0` 取代；
   新标签指向清理与改签之后的提交（`skills/persona-luoxiang/CHANGELOG.md` 记了这次变更的内容差异）。
-- 版本号起点统一为 `v1.0.0`：本次入库的 7 个 Skill 各建一个初始 Release。
+- 版本号起点统一为 `v1.0.0`：本次入库的 8 个 Skill 各建一个初始 Release。
 
 ## 安装
 
