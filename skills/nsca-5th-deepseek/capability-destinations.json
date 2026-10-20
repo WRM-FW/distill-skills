@@ -1,0 +1,541 @@
+{
+  "generated_by": "cangjie-tools v2.5.0",
+  "bundle_id": "bundle.nsca-5th",
+  "router_entrypoint": "nsca-5th",
+  "entrypoint_count": 8,
+  "capability_count": 133,
+  "destinations": {
+    "cap.nsca.needs-analysis": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/needs-analysis.md"
+    },
+    "cap.nsca.training-status": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/training-status-classification.md"
+    },
+    "cap.nsca.primary-training-goal": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/primary-training-goal.md"
+    },
+    "cap.nsca.exercise-selection": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/exercise-selection.md"
+    },
+    "cap.nsca.training-frequency": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/training-frequency.md"
+    },
+    "cap.nsca.exercise-order": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/exercise-order.md"
+    },
+    "cap.nsca.one-rm-xrm-determination": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/one-rm-xrm-determination.md"
+    },
+    "cap.nsca.load-reps-by-goal": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/load-reps-assignment.md"
+    },
+    "cap.nsca.power-load-assignment": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/power-load-assignment.md"
+    },
+    "cap.nsca.rpe-rir-srb": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/rpe-rir-srb-load.md"
+    },
+    "cap.nsca.load-progression": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/load-progression.md"
+    },
+    "cap.nsca.volume-assignment": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/training-volume.md"
+    },
+    "cap.nsca.rest-periods": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/rest-periods.md"
+    },
+    "cap.nsca.seven-step-program": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/seven-step-program-design.md"
+    },
+    "cap.nsca.resistance-program-design": {
+      "promoted_to": "nsca-resistance-program-design",
+      "router_view": "nsca-5th/references/capabilities/nsca-resistance-program-design.md"
+    },
+    "cap.nsca.periodization-three-level-build": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/periodization-three-level-build.md"
+    },
+    "cap.nsca.periodization-model-choice": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/periodization-model-choice.md"
+    },
+    "cap.nsca.periodization-cycle-durations": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/periodization-cycle-durations.md"
+    },
+    "cap.nsca.season-to-period-mapping": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/season-to-period-mapping.md"
+    },
+    "cap.nsca.annual-plan-construction": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/annual-plan-construction.md"
+    },
+    "cap.nsca.mesocycle-variable-filling": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/mesocycle-variable-filling.md"
+    },
+    "cap.nsca.periodization-mechanistic-theories": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/periodization-mechanistic-theories.md"
+    },
+    "cap.nsca.peaking-vs-maintenance": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/peaking-vs-maintenance.md"
+    },
+    "cap.nsca.in-season-load-management": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/in-season-load-management.md"
+    },
+    "cap.nsca.undulating-vs-traditional-identification": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/undulating-vs-traditional-identification.md"
+    },
+    "cap.nsca.periodization": {
+      "promoted_to": "nsca-periodization",
+      "router_view": "nsca-5th/references/capabilities/nsca-periodization.md"
+    },
+    "cap.nsca.test-selection-validity": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/test-selection-validity.md"
+    },
+    "cap.nsca.sport-specific-test-battery": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/sport-specific-test-battery.md"
+    },
+    "cap.nsca.test-sequencing-rest": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/test-sequencing-rest.md"
+    },
+    "cap.nsca.tester-selection-duties": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/tester-selection-duties.md"
+    },
+    "cap.nsca.test-prep-standardization": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/test-prep-standardization.md"
+    },
+    "cap.nsca.reliability-variability-troubleshoot": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/reliability-variability-troubleshoot.md"
+    },
+    "cap.nsca.test-environment-adjustment": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/test-environment-adjustment.md"
+    },
+    "cap.nsca.test-health-safety-referral": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/test-health-safety-referral.md"
+    },
+    "cap.nsca.monitoring-protocol-design": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/monitoring-protocol-design.md"
+    },
+    "cap.nsca.max-strength-test-protocols": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/max-strength-test-protocols.md"
+    },
+    "cap.nsca.load-velocity-profile": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/load-velocity-profile.md"
+    },
+    "cap.nsca.jump-power-test-protocols": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/jump-power-test-protocols.md"
+    },
+    "cap.nsca.speed-agility-test-protocols": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/speed-agility-test-protocols.md"
+    },
+    "cap.nsca.anaerobic-capacity-test-protocols": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/anaerobic-capacity-test-protocols.md"
+    },
+    "cap.nsca.local-muscular-endurance-protocols": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/local-muscular-endurance-protocols.md"
+    },
+    "cap.nsca.aerobic-capacity-test-protocols": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/aerobic-capacity-test-protocols.md"
+    },
+    "cap.nsca.movement-screen-flexibility": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/movement-screen-flexibility.md"
+    },
+    "cap.nsca.balance-test-protocols": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/balance-test-protocols.md"
+    },
+    "cap.nsca.anthropometry-bodycomp-measure": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/anthropometry-bodycomp-measure.md"
+    },
+    "cap.nsca.margaria-kalamen-power-calc": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/margaria-kalamen-power-calc.md"
+    },
+    "cap.nsca.body-composition-calc": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/body-composition-calc.md"
+    },
+    "cap.nsca.mas-vo2max-estimation": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/mas-vo2max-estimation.md"
+    },
+    "cap.nsca.descriptive-stats-athletic-profile": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/descriptive-stats-athletic-profile.md"
+    },
+    "cap.nsca.swc-effect-size": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/swc-effect-size.md"
+    },
+    "cap.nsca.norms-lookup-interpretation": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/norms-lookup-interpretation.md"
+    },
+    "cap.nsca.rsi-eur-calculation": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/rsi-eur-calculation.md"
+    },
+    "cap.nsca.testing-and-evaluation": {
+      "promoted_to": "nsca-testing-and-evaluation",
+      "router_view": "nsca-5th/references/capabilities/nsca-testing-and-evaluation.md"
+    },
+    "cap.nsca.plyometric-program-design-sop": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/plyometric-program-design-sop.md"
+    },
+    "cap.nsca.plyometric-intensity-volume": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/plyometric-intensity-volume.md"
+    },
+    "cap.nsca.plyometric-frequency-recovery": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/plyometric-frequency-recovery.md"
+    },
+    "cap.nsca.plyometric-progression": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/plyometric-progression.md"
+    },
+    "cap.nsca.plyometric-pretraining-screen": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/plyometric-pretraining-screen.md"
+    },
+    "cap.nsca.plyometric-age-adjustment": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/plyometric-age-adjustment.md"
+    },
+    "cap.nsca.plyometric-warmup-ramp": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/plyometric-warmup-ramp.md"
+    },
+    "cap.nsca.plyometric-safety-troubleshooting": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/plyometric-safety-troubleshooting.md"
+    },
+    "cap.nsca.plyometric-integration-complex": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/plyometric-integration-complex.md"
+    },
+    "cap.nsca.plyometric-design": {
+      "promoted_to": "nsca-plyometric-design",
+      "router_view": "nsca-5th/references/capabilities/nsca-plyometric-design.md"
+    },
+    "cap.nsca.speed-cod-agility-attribution": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/speed-cod-agility-attribution.md"
+    },
+    "cap.nsca.speed-force-metrics-calculation": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/speed-force-metrics-calculation.md"
+    },
+    "cap.nsca.agility-needs-analysis-to-program": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/agility-needs-analysis-to-program.md"
+    },
+    "cap.nsca.speed-short-to-long-periodization": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/speed-short-to-long-periodization.md"
+    },
+    "cap.nsca.sprint-technique-troubleshooting": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/sprint-technique-troubleshooting.md"
+    },
+    "cap.nsca.speed-method-selection-progression": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/speed-method-selection-progression.md"
+    },
+    "cap.nsca.agility-drill-constraints": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/agility-drill-constraints.md"
+    },
+    "cap.nsca.cod-angle-training-orientation": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/cod-angle-training-orientation.md"
+    },
+    "cap.nsca.cod-technique-diagnosis": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/cod-technique-diagnosis.md"
+    },
+    "cap.nsca.speed-agility-monitoring": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/speed-agility-monitoring.md"
+    },
+    "cap.nsca.speed-agility-program-variables": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/speed-agility-program-variables.md"
+    },
+    "cap.nsca.agility-multifactorial-plan": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/agility-multifactorial-plan.md"
+    },
+    "cap.nsca.ssc-speed-training-criteria": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/ssc-speed-training-criteria.md"
+    },
+    "cap.nsca.sprint-step-length-frequency": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/sprint-step-length-frequency.md"
+    },
+    "cap.nsca.speed-agility-design": {
+      "promoted_to": "nsca-speed-agility-design",
+      "router_view": "nsca-5th/references/capabilities/nsca-speed-agility-design.md"
+    },
+    "cap.nsca.aerobic-intensity-zones-target-hr": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/aerobic-intensity-zones-target-hr.md"
+    },
+    "cap.nsca.aerobic-program-design": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/aerobic-program-design-five-variables.md"
+    },
+    "cap.nsca.aerobic-progression-rule": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/aerobic-progression-10pct-single-variable.md"
+    },
+    "cap.nsca.energy-system-interval-ratio": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/energy-system-interval-ratio.md"
+    },
+    "cap.nsca.concurrent-training-management": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/concurrent-aerobic-resistance-training.md"
+    },
+    "cap.nsca.tapering-model": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/aerobic-tapering-models.md"
+    },
+    "cap.nsca.heat-acclimation": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/heat-acclimation-protocol.md"
+    },
+    "cap.nsca.altitude-lhtl": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/altitude-training-lhtl.md"
+    },
+    "cap.nsca.recovery-session": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/aerobic-recovery-session.md"
+    },
+    "cap.nsca.aerobic-endurance-design": {
+      "promoted_to": "nsca-aerobic-endurance-design",
+      "router_view": "nsca-5th/references/capabilities/nsca-aerobic-endurance-design.md"
+    },
+    "cap.nsca.warmup-ramp": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/warmup-ramp-design.md"
+    },
+    "cap.nsca.exercise-technique-basics": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/exercise-technique-basics.md"
+    },
+    "cap.nsca.weight-belt-decision": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/weight-belt-decision.md"
+    },
+    "cap.nsca.spotting-rules": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/spotting-rules.md"
+    },
+    "cap.nsca.power-exercise-phases": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/power-exercise-phases.md"
+    },
+    "cap.nsca.variable-resistance-load": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/chains-bands-load-calc.md"
+    },
+    "cap.nsca.ael-programming": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/accentuated-eccentric-loading.md"
+    },
+    "cap.nsca.alternative-modes-decision": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/alternative-modes-decision.md"
+    },
+    "cap.nsca.technique-troubleshooting": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/technique-error-correction.md"
+    },
+    "cap.nsca.youth-resistance-training": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/youth-resistance-training.md"
+    },
+    "cap.nsca.maturity-assessment-phv": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/maturity-assessment-phv.md"
+    },
+    "cap.nsca.older-adult-resistance-training": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/older-adult-resistance-training.md"
+    },
+    "cap.nsca.female-injury-risk-reduction": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/female-injury-risk-reduction.md"
+    },
+    "cap.nsca.pregnancy-postpartum-training": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/pregnancy-postpartum-training.md"
+    },
+    "cap.nsca.macronutrient-energy-needs": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/macronutrient-energy-needs.md"
+    },
+    "cap.nsca.glycemic-index-load": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/glycemic-index-load.md"
+    },
+    "cap.nsca.hydration-electrolyte-plan": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/hydration-electrolyte-plan.md"
+    },
+    "cap.nsca.competition-nutrition-timeline": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/competition-nutrition-timeline.md"
+    },
+    "cap.nsca.body-composition-intervention": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/body-composition-intervention.md"
+    },
+    "cap.nsca.energy-availability-red-s": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/energy-availability-red-s.md"
+    },
+    "cap.nsca.eating-disorder-rwl-referral": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/eating-disorder-rwl-referral.md"
+    },
+    "cap.nsca.nutrition-assessment-referral": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/nutrition-assessment-referral.md"
+    },
+    "cap.nsca.supplement-evidence-evaluation": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/supplement-evidence-evaluation.md"
+    },
+    "cap.nsca.ergogenic-abuse-identification": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/ergogenic-abuse-identification.md"
+    },
+    "cap.nsca.ergogenic-dosing-evidence": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/ergogenic-dosing-evidence.md"
+    },
+    "cap.nsca.arousal-psych-skills": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/arousal-psych-skills.md"
+    },
+    "cap.nsca.motor-skill-teaching": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/motor-skill-teaching.md"
+    },
+    "cap.nsca.mental-health-referral": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/mental-health-referral.md"
+    },
+    "cap.nsca.injury-return-psych-support": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/injury-return-psych-support.md"
+    },
+    "cap.nsca.detraining-assessment": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/detraining-assessment.md"
+    },
+    "cap.nsca.overtraining-continuum-classification": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/overtraining-continuum-classification.md"
+    },
+    "cap.nsca.underperformance-attribution-triage": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/underperformance-attribution-triage.md"
+    },
+    "cap.nsca.athlete-monitoring-plan-design": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/athlete-monitoring-plan-design.md"
+    },
+    "cap.nsca.overtraining-test-escalation": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/overtraining-test-escalation.md"
+    },
+    "cap.nsca.overtraining-recovery-strategy": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/overtraining-recovery-strategy.md"
+    },
+    "cap.nsca.overtraining-prevention-integration": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/overtraining-prevention-integration.md"
+    },
+    "cap.nsca.tissue-healing-phase-classification": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/tissue-healing-phase-classification.md"
+    },
+    "cap.nsca.rehab-resistance-progression": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/rehab-resistance-progression.md"
+    },
+    "cap.nsca.rehab-scope-and-referral": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/rehab-scope-and-referral.md"
+    },
+    "cap.nsca.exercise-medical-emergency-response": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/exercise-medical-emergency-response.md"
+    },
+    "cap.nsca.reinjury-risk-and-return-to-play": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/reinjury-risk-and-return-to-play.md"
+    },
+    "cap.nsca.facility-space-and-layout-planning": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/facility-space-and-layout-planning.md"
+    },
+    "cap.nsca.risk-management-and-negligence": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/risk-management-and-negligence.md"
+    },
+    "cap.nsca.emergency-action-plan": {
+      "served_by": "nsca-5th",
+      "card": "nsca-5th/references/capabilities/emergency-action-plan.md"
+    },
+    "cap.nsca.overtraining-recovery": {
+      "promoted_to": "nsca-overtraining-recovery",
+      "router_view": "nsca-5th/references/capabilities/nsca-overtraining-recovery.md"
+    }
+  }
+}

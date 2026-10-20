@@ -19,7 +19,7 @@
 
 ## ✨Masterpiece
 
-三个当前维护最完整、跨场景复用最多的 Skill。想先试一个，从这里开始。
+四个当前维护最完整、跨场景复用最多的 Skill。想先试一个，从这里开始。
 
 ### 1. `psychology-system` — 跨 28 部心理学典籍的整合路由
 
@@ -70,6 +70,23 @@
 它和 `psychology-system` 是两条独立主线：逻辑学线管「推得对不对、前提站不站得住」，
 心理学线管「为什么这么想、怎么沟通」。`SKILL.md` 的不适用条款把情绪共情类需求路由到 `psychology-system`。
 
+### 4. `personal-library-wisdom` — 个人书库的横向索引与按需调用
+
+| 项目 | 值 |
+| --- | --- |
+| 目录 | [`skills/personal-library-wisdom/`](skills/personal-library-wisdom/) |
+| 解决的问题 | 「书库里有没有讲 X 的书」「用《某书》的方法做 Y」：论证与谬误、证据分级、梦与心理模式、关系复盘、人生选择、社会与媒介、案件要件、成本与博弈、习惯与深度工作、历史与战略、技术路线、摄影、经典引用、中文写作、外国文学、传记复盘 |
+| 来源 | Google Drive「Library」228 个蒸馏单元，归入 16 个主题簇（logic / sciphil / psychoanalysis / psychrel / existential / social / law / econ / method / history / tech / photography / classics / cnlit / worldlit / biography） |
+| 上游 Skill | [kangarooking/cangjie-skill](https://github.com/kangarooking/cangjie-skill) v2.5.0（`RIA-TV++` 流水线，MIT） |
+| 结构 | `SKILL.md` 主路由 + 16 份 `references/clusters/` + 228 张 `references/books/` 书卡 + 索引/速查/术语/概览 |
+| 许可 | PolyForm Noncommercial 1.0.0（原创内容）；引用原书不超过 60 字，原著版权归出版社与作者 |
+| 版本 | `personal-library-wisdom-v1.0.0`，见 [CHANGELOG](skills/personal-library-wisdom/CHANGELOG.md) |
+| 触发 | `我书库里有没有讲「怎么判断一个心理学说法是不是伪科学」的书？有的话用那套方法评一下这篇文章` |
+
+它和其他 Skill 是**横向与纵向**的关系：书库负责「有没有、在哪本、一句话结论是什么」，
+一次最多加载 2 份文档；`psychology-system`、`logic-system` 这类专门 Skill 负责「某个领域从诊断到落地的全流程」。
+同一问题既要广度又要深度时，先用书库定位书目，再切到对应专门 Skill 执行。
+
 ---
 
 ## 全部 Skill
@@ -83,14 +100,18 @@
 | [`skills/intimate-relationships-8th/`](skills/intimate-relationships-8th/) | 亲密关系诊断与冲突降级 | 米勒《亲密关系（第 8 版）》 | 12 | [cangjie-skill](https://github.com/kangarooking/cangjie-skill) | PolyForm NC 1.0.0 | `intimate-relationships-8th-v1.0.0` |
 | [`skills/social-psychology/`](skills/social-psychology/) | 社会影响、说服与群体决策 | 迈尔斯《社会心理学（第 11 版）》 | 12 | [cangjie-skill](https://github.com/kangarooking/cangjie-skill) | PolyForm NC 1.0.0 | `social-psychology-v1.0.0` |
 | [`skills/zimbardo-psych-8th/`](skills/zimbardo-psych-8th/) | 普通心理学全 14 章 50 概念 | 津巴多《普通心理学（第 8 版）》 | 12 | [cangjie-skill](https://github.com/kangarooking/cangjie-skill) | PolyForm NC 1.0.0 | `zimbardo-psych-8th-v1.0.0` |
+| [`skills/nsca-5th-deepseek/`](skills/nsca-5th-deepseek/) | NSCA 第 5 版二次构建（8 个打包 Skill） | 同一教材（26 章 / 1876 页） | 133 | [cangjie-skill v2.5.0](https://github.com/kangarooking/cangjie-skill) | PolyForm NC 1.0.0 | `nsca-5th-deepseek-v1.0.0` |
+| [`skills/personal-library-wisdom/`](skills/personal-library-wisdom/) | 个人书库横向索引与按需调用 | Library 书库 228 个蒸馏单元 | 16 簇 / 228 卡 | [cangjie-skill v2.5.0](https://github.com/kangarooking/cangjie-skill) | PolyForm NC 1.0.0 | `personal-library-wisdom-v1.0.0` |
 | [`skills/persona-luoxiang/`](skills/persona-luoxiang/) | 人物思维框架与表达风格 | B 站公开视频字幕物料 132 份 | 11 份调研笔记 | [Distilly](https://github.com/titanwings/distilly) + [nuwa-skill](https://github.com/alchaincyf/nuwa-skill) | PolyForm NC 1.0.0 | `persona-luoxiang-v1.0.0` |
 
 ### 上游判定依据（不是凭名称推断）
 
-- **cangjie-skill**：七个书籍/教材 Skill 的 `SKILL.md` 与 README 都自述走「仓颉 `cangjie-skill`（`RIA-TV++` 流水线）」，
+- **cangjie-skill**：九个 Skill 的 `SKILL.md` 与 README 都自述走「仓颉 `cangjie-skill`（`RIA-TV++` 流水线）」，
   其能力卡的 `R / I / A1 / A2 / E / B` 六段、`阶段 0-3`、Triple Verification 与 `references/capabilities/` 目录约定，
   与 [kangarooking/cangjie-skill](https://github.com/kangarooking/cangjie-skill) 的 README 术语逐项对应。
-  注意：各 Skill 未内嵌该仓库的提交号或版本号，**具体使用的管线版本待确认**。
+  其中 `nsca-5th-deepseek` 自带 `BUILD_INFO.json`，直接写明 `source_url` 为该仓库、版本 v2.5.0、
+  构建自提交 `3adf9e6`；`personal-library-wisdom` 的元数据自述 `cangjie-skill v2.5`。
+  其余七个 Skill 未内嵌版本号，**它们具体使用的管线版本待确认**（仓库身份已由上述一手材料确认，不再是推测）。
 - **Distilly + nuwa-skill**：`persona-luoxiang` 在 `NOTICE.md`、`THIRD_PARTY_NOTICES.md`
   与 README 第八节明确列出了两个上游及其复用范围。
 - 同名的 [Yeadon8888/cangjie-skill](https://github.com/Yeadon8888/cangjie-skill) 是「基于女娲架构」的人物蒸馏引擎，
@@ -121,7 +142,14 @@ distill-skills/
 - `SKILL.md` 只做路由，正文控制在 500 行以内，细节下沉到 `references/`（渐进式披露）。
 - `description` 小于 1024 字符，写清「什么场景该触发」，Agent 靠它选型。
 - 每张能力卡必须带 `B`（边界与失败模式）：伦理红线、时代局限、典型误用。
-- 同一主题多版本并存时（如 NSCA 3rd/5th），在 README 里写清分工，不要只靠目录名。
+- 同一主题多版本并存时（如 NSCA 3rd/5th、nsca-5th/nsca-5th-deepseek），在 README 里写清分工，不要只靠目录名。
+
+两个已知例外，登记在此以免被当成错误改掉：
+
+- `personal-library-wisdom` 用 `references/clusters/` + `references/books/`，不是 `references/capabilities/`：
+  它是书卡库型产物（16 簇 + 228 卡），不是能力卡型，原样保留。
+- `nsca-5th-deepseek` 是打包件，内部含 1 个源路由与 7 个子 Skill；其 `SKILL.md` 的 `name` 仍是 `nsca-5th`，
+  与 `skills/nsca-5th/` 同名，**同一个 Agent 只能装其中一个**，安装前改 `name` 才能并存。
 
 ## 收录与维护流程
 
@@ -169,7 +197,7 @@ distill-skills/
 
 - **历史标签处置**：原仓库的裸 `v1.0.0` 及其 Release 已删除，由 `persona-luoxiang-v1.0.0` 取代；
   新标签指向清理与改签之后的提交（`skills/persona-luoxiang/CHANGELOG.md` 记了这次变更的内容差异）。
-- 版本号起点统一为 `v1.0.0`：本次入库的 8 个 Skill 各建一个初始 Release。
+- 版本号起点统一为 `v1.0.0`：本次入库的 10 个 Skill 各建一个初始 Release。
 
 ## 安装
 

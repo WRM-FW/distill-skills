@@ -1,0 +1,527 @@
+{
+ "suite_id": "nsca-5th-trigger-suite",
+ "version": "0.1.0",
+ "generated_by": "cangjie-skill 2.5.0 阶段 4",
+ "entries": [
+  {
+   "skill": "nsca-resistance-program-design",
+   "test_cases": [
+    {
+     "id": "nsca-resistance-program-design--should-trigger-01",
+     "type": "should_trigger",
+     "skill": "nsca-resistance-program-design",
+     "prompt": "帮我给一个大学篮球后卫排一份 8 周的力量训练。他每周能来 3 次，深蹲 1RM 大约 120 公斤，以前练过两年。",
+     "expected_behavior": "调用 nsca-resistance-program-design，先做需求分析（项目需求+训练状态），再走七步给频率/动作/负荷/量/休息",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-resistance-program-design--should-trigger-02",
+     "type": "should_trigger",
+     "skill": "nsca-resistance-program-design",
+     "prompt": "他想增肌，我该让他做几组几次、用多重的重量？",
+     "expected_behavior": "调用 nsca-resistance-program-design 的负荷×重复单元（Table 18.11：肥大 67–80% 1RM、8–12 次）",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-resistance-program-design--should-trigger-03",
+     "type": "should_trigger",
+     "skill": "nsca-resistance-program-design",
+     "prompt": "一份训练课里的动作该怎么排顺序？先做深蹲还是先做腿屈伸？",
+     "expected_behavior": "调用 nsca-resistance-program-design 的动作顺序单元（Step 4）",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-resistance-program-design--should-trigger-04",
+     "type": "should_trigger",
+     "skill": "nsca-resistance-program-design",
+     "prompt": "他的负荷什么时候该往上加、加多少？",
+     "expected_behavior": "调用 nsca-resistance-program-design 的负荷进阶单元（2-for-2 规则 + Table 18.12 增幅）",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-resistance-program-design--should-trigger-05",
+     "type": "should_trigger",
+     "skill": "nsca-resistance-program-design",
+     "prompt": "帮我复核一下这份力量计划有没有明显问题：每周 5 天、每天 20 组、每组都做到力竭",
+     "expected_behavior": "调用 nsca-resistance-program-design，用频率/量/力竭规则判断过载与恢复风险",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-resistance-program-design--should-not-trigger-01",
+     "type": "should_not_trigger",
+     "skill": "nsca-resistance-program-design",
+     "prompt": "我练了 6 周，成绩反而在下降，是不是练过头了？",
+     "expected_behavior": "应触发 nsca-overtraining-recovery 而非本 skill（成绩下降归因属恢复域）",
+     "notes": "诱饵"
+    },
+    {
+     "id": "nsca-resistance-program-design--should-not-trigger-02",
+     "type": "should_not_trigger",
+     "skill": "nsca-resistance-program-design",
+     "prompt": "帮我算一下 30 岁、静息心率 60、想练 60%–70% 强度的目标心率",
+     "expected_behavior": "应触发 nsca-aerobic-endurance-design（有氧强度分区）",
+     "notes": "诱饵"
+    },
+    {
+     "id": "nsca-resistance-program-design--should-not-trigger-03",
+     "type": "should_not_trigger",
+     "skill": "nsca-resistance-program-design",
+     "prompt": "1RM 是什么意思？",
+     "expected_behavior": "纯术语查询，任何 skill 都不应被激活",
+     "notes": "诱饵"
+    },
+    {
+     "id": "nsca-resistance-program-design--edge-01",
+     "type": "edge_case",
+     "skill": "nsca-resistance-program-design",
+     "prompt": "我该练几组？",
+     "expected_behavior": "信息严重不足（无训练状态/无目标/无项目）→ 可以激活，但必须先询问而不是直接给组数",
+     "notes": "边界模糊场景"
+    }
+   ]
+  },
+  {
+   "skill": "nsca-periodization",
+   "test_cases": [
+    {
+     "id": "nsca-periodization--should-trigger-01",
+     "type": "should_trigger",
+     "skill": "nsca-periodization",
+     "prompt": "帮我把这一年的训练排出来，队伍 8 月开始集训、12 月有主赛季。",
+     "expected_behavior": "调用 nsca-periodization，建立 macrocycle 并按运动季节映射到时期",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-periodization--should-trigger-02",
+     "type": "should_trigger",
+     "skill": "nsca-periodization",
+     "prompt": "休赛期和赛季中，训练量和强度该怎么变化？",
+     "expected_behavior": "调用 nsca-periodization 的时期演变与赛内负荷管理单元",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-periodization--should-trigger-03",
+     "type": "should_trigger",
+     "skill": "nsca-periodization",
+     "prompt": "我该用传统线性周期化还是波动（DUP）？",
+     "expected_behavior": "调用 nsca-periodization 的模型选择/波动辨识单元，并如实说明原文对\"哪种更优\"无定论",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-periodization--should-trigger-04",
+     "type": "should_trigger",
+     "skill": "nsca-periodization",
+     "prompt": "赛前两周怎么减量才能让状态到峰值？",
+     "expected_behavior": "调用 nsca-periodization 的减载/峰值单元（并可能组合 nsca-aerobic-endurance-design 的减量模型）",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-periodization--should-not-trigger-01",
+     "type": "should_not_trigger",
+     "skill": "nsca-periodization",
+     "prompt": "深蹲 1RM 是 120 公斤，想练最大力量，这一组该用多重做几次？",
+     "expected_behavior": "应触发 nsca-resistance-program-design（单次课的负荷赋值），不是周期化",
+     "notes": "诱饵"
+    },
+    {
+     "id": "nsca-periodization--should-not-trigger-02",
+     "type": "should_not_trigger",
+     "skill": "nsca-periodization",
+     "prompt": "帮我把这次体测的纵跳 z 分数算出来",
+     "expected_behavior": "应触发 nsca-testing-and-evaluation（统计与画像）",
+     "notes": "诱饵"
+    },
+    {
+     "id": "nsca-periodization--edge-01",
+     "type": "edge_case",
+     "skill": "nsca-periodization",
+     "prompt": "我这周临时只能练两次，怎么办？",
+     "expected_behavior": "短周期临时调整，不应自动展开成套周期化；可激活但只需 microcycle 级微调，并提示若频繁发生才进入周期化范畴",
+     "notes": "边界模糊场景"
+    }
+   ]
+  },
+  {
+   "skill": "nsca-testing-and-evaluation",
+   "test_cases": [
+    {
+     "id": "nsca-testing-and-evaluation--should-trigger-01",
+     "type": "should_trigger",
+     "skill": "nsca-testing-and-evaluation",
+     "prompt": "帮我校队选一套体能测试，主要是篮球运动员。",
+     "expected_behavior": "调用 nsca-testing-and-evaluation，按专项特异性与效度/信度构建测试电池",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-testing-and-evaluation--should-trigger-02",
+     "type": "should_trigger",
+     "skill": "nsca-testing-and-evaluation",
+     "prompt": "这组垂直纵跳数据怎么看？全队均值 45 cm、标准差 5，他跳了 52 cm。",
+     "expected_behavior": "调用 nsca-testing-and-evaluation 的描述统计/z 分数单元",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-testing-and-evaluation--should-trigger-03",
+     "type": "should_trigger",
+     "skill": "nsca-testing-and-evaluation",
+     "prompt": "怎么把几项测试的结果合起来看这个运动员的弱项在哪？",
+     "expected_behavior": "调用 nsca-testing-and-evaluation 的运动员画像单元",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-testing-and-evaluation--should-trigger-04",
+     "type": "should_trigger",
+     "skill": "nsca-testing-and-evaluation",
+     "prompt": "后天要测 1RM，测试应该按什么顺序做、中间休息多久？",
+     "expected_behavior": "调用 nsca-testing-and-evaluation 的测试顺序与休息编排单元",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-testing-and-evaluation--should-trigger-05",
+     "type": "should_trigger",
+     "skill": "nsca-testing-and-evaluation",
+     "prompt": "这份 1.5 英里跑的成绩能推算出他的 VO2max 吗？",
+     "expected_behavior": "调用 nsca-testing-and-evaluation，并必须说明原文只给查表、无回归式，不得自行拟合",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-testing-and-evaluation--should-not-trigger-01",
+     "type": "should_not_trigger",
+     "skill": "nsca-testing-and-evaluation",
+     "prompt": "帮我排一份 8 周增肌计划",
+     "expected_behavior": "应触发 nsca-resistance-program-design（计划设计）",
+     "notes": "诱饵"
+    },
+    {
+     "id": "nsca-testing-and-evaluation--should-not-trigger-02",
+     "type": "should_not_trigger",
+     "skill": "nsca-testing-and-evaluation",
+     "prompt": "他昨天膝伤复发，明天能恢复训练吗？",
+     "expected_behavior": "属医疗与康复范畴，应由医生/物理治疗师判断；来源路由入口内的康复边界能力只能提示转诊",
+     "notes": "诱饵"
+    },
+    {
+     "id": "nsca-testing-and-evaluation--edge-01",
+     "type": "edge_case",
+     "skill": "nsca-testing-and-evaluation",
+     "prompt": "我体脂测出来 24%，算高吗？",
+     "expected_behavior": "可以激活，但必须先确认人群/年龄/性别/测量方法，并提示常模的时效性与人群依赖性",
+     "notes": "边界模糊场景"
+    }
+   ]
+  },
+  {
+   "skill": "nsca-plyometric-design",
+   "test_cases": [
+    {
+     "id": "nsca-plyometric-design--should-trigger-01",
+     "type": "should_trigger",
+     "skill": "nsca-plyometric-design",
+     "prompt": "给我排一个跳箱训练计划，一周能练两次。",
+     "expected_behavior": "调用 nsca-plyometric-design，先做需求分析与准入评估，再定量与强度",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-plyometric-design--should-trigger-02",
+     "type": "should_trigger",
+     "skill": "nsca-plyometric-design",
+     "prompt": "增强式训练一次练多少？按触地次数算吗？",
+     "expected_behavior": "调用 nsca-plyometric-design 的量与强度单元（Table 19.6 触点档位）",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-plyometric-design--should-trigger-03",
+     "type": "should_trigger",
+     "skill": "nsca-plyometric-design",
+     "prompt": "他落地时膝盖往里扣，怎么纠正？",
+     "expected_behavior": "调用 nsca-plyometric-design 的安全与错误排障单元（dynamic valgus→ACL 风险）",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-plyometric-design--should-trigger-04",
+     "type": "should_trigger",
+     "skill": "nsca-plyometric-design",
+     "prompt": "14 岁的孩子能做增强式训练吗？",
+     "expected_behavior": "调用 nsca-plyometric-design 的年龄裁剪单元（骨骺未闭的禁忌与起始剂量）",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-plyometric-design--should-not-trigger-01",
+     "type": "should_not_trigger",
+     "skill": "nsca-plyometric-design",
+     "prompt": "帮我设计 40 米冲刺和变向的训练",
+     "expected_behavior": "应触发 nsca-speed-agility-design（直线速度与变向）",
+     "notes": "诱饵"
+    },
+    {
+     "id": "nsca-plyometric-design--should-not-trigger-02",
+     "type": "should_not_trigger",
+     "skill": "nsca-plyometric-design",
+     "prompt": "深蹲 5RM 是 120 公斤，加链条应该用多重？",
+     "expected_behavior": "属器械负荷计算，应由来源路由入口内的变阻负荷计算能力处理",
+     "notes": "诱饵"
+    },
+    {
+     "id": "nsca-plyometric-design--edge-01",
+     "type": "edge_case",
+     "skill": "nsca-plyometric-design",
+     "prompt": "我想提高弹跳，是该多练深蹲还是多跳箱？",
+     "expected_behavior": "跨 skill：需给出主力选择（力量不足者先补最大力量）+ 增强式作为组合，不应只答一边",
+     "notes": "边界模糊场景"
+    }
+   ]
+  },
+  {
+   "skill": "nsca-speed-agility-design",
+   "test_cases": [
+    {
+     "id": "nsca-speed-agility-design--should-trigger-01",
+     "type": "should_trigger",
+     "skill": "nsca-speed-agility-design",
+     "prompt": "怎么提高足球运动员的变向能力？",
+     "expected_behavior": "调用 nsca-speed-agility-design 的需求分析→分期处方流程",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-speed-agility-design--should-trigger-02",
+     "type": "should_trigger",
+     "skill": "nsca-speed-agility-design",
+     "prompt": "敏捷和变向到底有什么区别？我该练哪个？",
+     "expected_behavior": "调用 nsca-speed-agility-design 的三分定义与判定单元（COD vs 反应性敏捷）",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-speed-agility-design--should-trigger-03",
+     "type": "should_trigger",
+     "skill": "nsca-speed-agility-design",
+     "prompt": "帮我排 6 周速度训练。",
+     "expected_behavior": "调用 nsca-speed-agility-design 的 short-to-long 分期与手段选择",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-speed-agility-design--should-trigger-04",
+     "type": "should_trigger",
+     "skill": "nsca-speed-agility-design",
+     "prompt": "他的 5-10-5 折返成绩比直线冲刺差很多，说明什么？",
+     "expected_behavior": "调用 nsca-speed-agility-design 的 COD deficit 计算与归因单元",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-speed-agility-design--should-not-trigger-01",
+     "type": "should_not_trigger",
+     "skill": "nsca-speed-agility-design",
+     "prompt": "跳跃落地时膝盖内扣怎么纠正？",
+     "expected_behavior": "应触发 nsca-plyometric-design（落地技术与 ACL 风险）",
+     "notes": "诱饵"
+    },
+    {
+     "id": "nsca-speed-agility-design--should-not-trigger-02",
+     "type": "should_not_trigger",
+     "skill": "nsca-speed-agility-design",
+     "prompt": "怎么算有氧训练的目标心率？",
+     "expected_behavior": "应触发 nsca-aerobic-endurance-design",
+     "notes": "诱饵"
+    },
+    {
+     "id": "nsca-speed-agility-design--edge-01",
+     "type": "edge_case",
+     "skill": "nsca-speed-agility-design",
+     "prompt": "他短跑起跑总是慢。",
+     "expected_behavior": "可激活，但需先诊断是技术、力量还是反应问题（技术错误排障路径），不能直接开处方",
+     "notes": "边界模糊场景"
+    }
+   ]
+  },
+  {
+   "skill": "nsca-aerobic-endurance-design",
+   "test_cases": [
+    {
+     "id": "nsca-aerobic-endurance-design--should-trigger-01",
+     "type": "should_trigger",
+     "skill": "nsca-aerobic-endurance-design",
+     "prompt": "帮我准备 10 公里，一周能练 4 次。",
+     "expected_behavior": "调用 nsca-aerobic-endurance-design 的五步设计变量",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-aerobic-endurance-design--should-trigger-02",
+     "type": "should_trigger",
+     "skill": "nsca-aerobic-endurance-design",
+     "prompt": "30 岁、静息心率 60，我想练 60%–70% 强度，目标心率是多少？",
+     "expected_behavior": "调用 nsca-aerobic-endurance-design 的目标心率计算单元（Karvonen/%HRR 与 %HRmax 两法）",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-aerobic-endurance-design--should-trigger-03",
+     "type": "should_trigger",
+     "skill": "nsca-aerobic-endurance-design",
+     "prompt": "HIIT 和 LSD 怎么排进赛季？",
+     "expected_behavior": "调用 nsca-aerobic-endurance-design 的训练类型处方与赛季调整",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-aerobic-endurance-design--should-trigger-04",
+     "type": "should_trigger",
+     "skill": "nsca-aerobic-endurance-design",
+     "prompt": "有氧和力量训练能一起练吗？会不会互相干扰？",
+     "expected_behavior": "调用 nsca-aerobic-endurance-design 的同期训练单元（干扰效应条件）",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-aerobic-endurance-design--should-not-trigger-01",
+     "type": "should_not_trigger",
+     "skill": "nsca-aerobic-endurance-design",
+     "prompt": "帮我排一份增肌计划",
+     "expected_behavior": "应触发 nsca-resistance-program-design（负荷与重复分配）",
+     "notes": "诱饵"
+    },
+    {
+     "id": "nsca-aerobic-endurance-design--should-not-trigger-02",
+     "type": "should_not_trigger",
+     "skill": "nsca-aerobic-endurance-design",
+     "prompt": "我练完总是很累，感觉一直没恢复",
+     "expected_behavior": "应触发 nsca-overtraining-recovery（恢复不足/过度训练排查）",
+     "notes": "诱饵"
+    },
+    {
+     "id": "nsca-aerobic-endurance-design--edge-01",
+     "type": "edge_case",
+     "skill": "nsca-aerobic-endurance-design",
+     "prompt": "我想减脂，该多做有氧还是多练力量？",
+     "expected_behavior": "跨 skill：应同时涉及 nsca-aerobic-endurance-design 与 nsca-resistance-program-design，并结合能量摄入（路由入口内的营养能力）",
+     "notes": "边界模糊场景"
+    }
+   ]
+  },
+  {
+   "skill": "nsca-overtraining-recovery",
+   "test_cases": [
+    {
+     "id": "nsca-overtraining-recovery--should-trigger-01",
+     "type": "should_trigger",
+     "skill": "nsca-overtraining-recovery",
+     "prompt": "我练了 6 周，成绩反而下降，是不是练过头了？",
+     "expected_behavior": "调用 nsca-overtraining-recovery，用归因排查而非直接断言过度训练",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-overtraining-recovery--should-trigger-02",
+     "type": "should_trigger",
+     "skill": "nsca-overtraining-recovery",
+     "prompt": "怎么判断运动员是真的过度训练还是在正常恢复？",
+     "expected_behavior": "调用 nsca-overtraining-recovery 的连续谱判定与监控指标选择",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-overtraining-recovery--should-trigger-03",
+     "type": "should_trigger",
+     "skill": "nsca-overtraining-recovery",
+     "prompt": "过度训练之后该怎么恢复？要停多久？",
+     "expected_behavior": "调用 nsca-overtraining-recovery 的恢复策略选择与恢复时长预期",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-overtraining-recovery--should-trigger-04",
+     "type": "should_trigger",
+     "skill": "nsca-overtraining-recovery",
+     "prompt": "训练量加多少算危险？有没有警戒线？",
+     "expected_behavior": "调用 nsca-overtraining-recovery 的预防整合单元（负荷变异与警戒线）",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-overtraining-recovery--should-not-trigger-01",
+     "type": "should_not_trigger",
+     "skill": "nsca-overtraining-recovery",
+     "prompt": "帮我安排下一个中周期的强度和量",
+     "expected_behavior": "应触发 nsca-periodization（计划编排），不是恢复",
+     "notes": "诱饵"
+    },
+    {
+     "id": "nsca-overtraining-recovery--should-not-trigger-02",
+     "type": "should_not_trigger",
+     "skill": "nsca-overtraining-recovery",
+     "prompt": "帮我算一下他的体脂率",
+     "expected_behavior": "应触发 nsca-testing-and-evaluation（体成分计算）",
+     "notes": "诱饵"
+    },
+    {
+     "id": "nsca-overtraining-recovery--edge-01",
+     "type": "edge_case",
+     "skill": "nsca-overtraining-recovery",
+     "prompt": "我最近睡不好、静息心率也比平时高。",
+     "expected_behavior": "可能指向过度训练也可能来自生活压力/疾病 → 应激活并走归因排查，不应直接下过度训练的结论",
+     "notes": "边界模糊场景"
+    }
+   ]
+  },
+  {
+   "skill": "nsca-5th",
+   "test_cases": [
+    {
+     "id": "nsca-5th--should-trigger-01",
+     "type": "should_trigger",
+     "skill": "nsca-5th",
+     "prompt": "比赛前一天他该吃什么、喝多少？",
+     "expected_behavior": "属营养领域，由来源路由入口 nsca-5th 路由到补水/竞赛营养能力卡",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-5th--should-trigger-02",
+     "type": "should_trigger",
+     "skill": "nsca-5th",
+     "prompt": "青少年能练力量吗？有什么要注意的？",
+     "expected_behavior": "属特殊人群，由 nsca-5th 路由到青少年抗阻训练能力卡",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-5th--should-trigger-03",
+     "type": "should_trigger",
+     "skill": "nsca-5th",
+     "prompt": "深蹲时该不该系护腰？",
+     "expected_behavior": "属技术安全，由 nsca-5th 路由到护腰判据能力卡",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-5th--should-trigger-04",
+     "type": "should_trigger",
+     "skill": "nsca-5th",
+     "prompt": "训练房 200 平米，该放几台跑步机、怎么分区？",
+     "expected_behavior": "属场地设计，由 nsca-5th 路由到场地空间估算能力卡",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-5th--should-trigger-05",
+     "type": "should_trigger",
+     "skill": "nsca-5th",
+     "prompt": "我怀疑他的补剂里含违禁成分，怎么判断？",
+     "expected_behavior": "属增补剂与滥用识别，由 nsca-5th 路由到增补剂证据评估与滥用体征能力卡",
+     "notes": "正面场景"
+    },
+    {
+     "id": "nsca-5th--should-not-trigger-01",
+     "type": "should_not_trigger",
+     "skill": "nsca-5th",
+     "prompt": "帮我给这个运动员排一份抗阻训练计划",
+     "expected_behavior": "应触发 nsca-resistance-program-design 这个晋级 Skill，而非先进路由入口",
+     "notes": "诱饵"
+    },
+    {
+     "id": "nsca-5th--should-not-trigger-02",
+     "type": "should_not_trigger",
+     "skill": "nsca-5th",
+     "prompt": "怎么解读这次体测数据",
+     "expected_behavior": "应触发 nsca-testing-and-evaluation",
+     "notes": "诱饵"
+    },
+    {
+     "id": "nsca-5th--edge-01",
+     "type": "edge_case",
+     "skill": "nsca-5th",
+     "prompt": "我想让他整体变强。",
+     "expected_behavior": "意图过宽（未指定素质域）→ 应激活 nsca-5th 路由入口，先澄清目标再分发",
+     "notes": "边界模糊场景"
+    }
+   ]
+  }
+ ]
+}
