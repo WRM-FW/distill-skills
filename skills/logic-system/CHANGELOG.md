@@ -1,6 +1,6 @@
 # CHANGELOG · logic-system
 
-版本标签命名规则：`logic-system-v<semver>`，见仓库根 README「版本与 Release 规范」。
+版本标签命名规则：`logic-system-v<semver>`，见仓库根 README「维护规范」。
 
 ## v1.0.0 — 2026-10-19
 

@@ -1,6 +1,6 @@
 # CHANGELOG · persona-luoxiang
 
-版本标签命名规则：`persona-luoxiang-v<semver>`，见仓库根 README「版本与发布」。
+版本标签命名规则：`persona-luoxiang-v<semver>`，见仓库根 README「维护规范」。
 
 ## v1.0.0 — 2026-09-22（首发）/ 2026-10-15（迁入本仓库）
 

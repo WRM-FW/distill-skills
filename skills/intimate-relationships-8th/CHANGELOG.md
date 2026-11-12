@@ -1,6 +1,6 @@
 # CHANGELOG · intimate-relationships-8th
 
-版本标签命名规则：`intimate-relationships-8th-v<semver>`，见仓库根 README「版本与发布」。
+版本标签命名规则：`intimate-relationships-8th-v<semver>`，见仓库根 README「维护规范」。
 
 ## v1.0.0 — 2026-10-15
 

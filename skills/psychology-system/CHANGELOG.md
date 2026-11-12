@@ -1,6 +1,6 @@
 # CHANGELOG · psychology-system
 
-版本标签命名规则：`psychology-system-v<semver>`，见仓库根 README「版本与发布」。
+版本标签命名规则：`psychology-system-v<semver>`，见仓库根 README「维护规范」。
 
 ## v1.0.0 — 2026-10-15
 

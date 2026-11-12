@@ -1,6 +1,18 @@
 ---
 name: social-psychology
-description: Evidence-based social psychology diagnostic, behavioral intervention, persuasion, group decision-making, prejudice reduction, and conflict resolution system distilled from David G. Myers' Social Psychology (11th Ed. / 社会心理学 第11版, trans. Hou Yubo et al.) via the Cangjie RIA-TV++ pipeline. Use when the user asks to analyze or intervene in social thinking, social influence, or social relations: auditing research validity and hindsight bias, diagnosing self-serving bias or learned helplessness, debiasing heuristics and attribution errors (FAE), engineering attitude-behavior change (foot-in-the-door, cognitive dissonance, overjustification), analyzing evolutionary vs. cultural/gender norms, resisting conformity/obedience, designing ELM persuasion and attitude inoculation, preventing groupthink and social loafing, reducing prejudice and stereotype threat, curbing aggression, fostering intimacy and bystander help, or resolving conflicts via GRIT.
+description: >-
+  Evidence-based social psychology diagnostic, behavioral intervention, persuasion, group
+  decision-making, prejudice reduction, and conflict resolution system distilled from
+  David G. Myers' Social Psychology (11th Ed. / 社会心理学 第11版, trans. Hou Yubo et al.) via
+  the Cangjie RIA-TV++ pipeline. Use when the user asks to analyze or intervene in social
+  thinking, social influence, or social relations: auditing research validity and
+  hindsight bias, diagnosing self-serving bias or learned helplessness, debiasing
+  heuristics and attribution errors (FAE), engineering attitude-behavior change
+  (foot-in-the-door, cognitive dissonance, overjustification), analyzing evolutionary vs.
+  cultural/gender norms, resisting conformity/obedience, designing ELM persuasion and
+  attitude inoculation, preventing groupthink and social loafing, reducing prejudice and
+  stereotype threat, curbing aggression, fostering intimacy and bystander help, or
+  resolving conflicts via GRIT.
 ---
 
 # Myers Social Psychology (11th Ed.) Operating System
