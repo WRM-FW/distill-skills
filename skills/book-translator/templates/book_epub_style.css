@@ -1,0 +1,230 @@
+/* ==========================================================================
+   Professional Book Typesetting Stylesheet (Apple Books WebKit / Kindle / Modern E-Readers)
+   ========================================================================== */
+
+/* 1. Global Reset & Theme Adaptability (Dark Mode / Sepia / Light) */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 5% 5%;
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  font-family: -apple-system, "PingFang SC", "Songti SC", "Source Han Serif SC", "STSong", "Noto Serif CJK SC", serif;
+  font-size: 1em;
+  line-height: 1.65;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: none;
+  hyphens: none;
+}
+
+/* 2. Fix Small Caps & Head-letter Glitches */
+small, .small-caps, [role="doc-pagebreak"] + small {
+  font-size: 1em !important;
+  font-weight: inherit;
+  font-variant: normal;
+  text-transform: none;
+}
+
+/* 3. Paragraphs & Standard Chinese Indentation */
+p {
+  margin: 0;
+  padding: 0;
+  text-indent: 2em;
+  orphans: 2;
+  widows: 2;
+}
+
+/* Paragraph spacing when needed */
+p + p {
+  margin-top: 0.25em;
+}
+
+/* Reset Indentation for specific elements */
+.no-indent,
+.noindent,
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+.chapter-title + p,
+blockquote p,
+.quote p,
+.dialogue p,
+.callout p {
+  text-indent: 0;
+}
+
+/* 4. Headings & Page-Break Protection */
+h1, .chapter-title, .title {
+  margin: 2em 0 1em 0;
+  font-family: -apple-system, "PingFang SC", "Heiti SC", "Source Han Sans SC", "STHeiti", sans-serif;
+  font-size: 1.6em;
+  font-weight: bold;
+  line-height: 1.3;
+  text-align: center;
+  break-before: page;
+  -webkit-break-before: page;
+  page-break-before: always;
+  break-inside: avoid;
+}
+
+h2, .section-title {
+  margin: 1.6em 0 0.8em 0;
+  font-family: -apple-system, "PingFang SC", "Heiti SC", "Source Han Sans SC", "STHeiti", sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 1.35;
+  break-inside: avoid;
+}
+
+h3, .sub-section-title {
+  margin: 1.3em 0 0.6em 0;
+  font-size: 1.15em;
+  font-weight: bold;
+  line-height: 1.4;
+  break-inside: avoid;
+}
+
+/* 5. Faux Italic Prevention: Map Italics & Emphasis to Elegant Chinese Kaiti */
+i, em, cite, dfn, .italic, .emphasis {
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", "楷体", "BiauKai", serif;
+  font-style: normal;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+/* 6. Blockquotes, Dialogues & Interviews */
+blockquote, .quote, .interview-block {
+  margin: 1.2em 0;
+  padding: 0.5em 1em;
+  border-left: 3px solid #8e9ca8;
+  background-color: rgba(0, 0, 0, 0.03);
+  font-family: "Kaiti SC", "STKaiti", "KaiTi", serif;
+  font-style: normal;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+@media (prefers-color-scheme: dark) {
+  blockquote, .quote, .interview-block {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-left-color: #5c6b73;
+  }
+}
+
+/* 7. Dialogues, Messages, and Transcript Blocks */
+.dialogue, .paras, .parash, .parasi, .paras1, .parass {
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 0.5em 0;
+}
+
+/* 8. Pop-up Footnotes & Annotations (EPUB 3 / Apple Books Native Semantics) */
+a.footnote-ref, a[role="doc-noteref"], sup a {
+  text-decoration: none;
+  font-size: 0.75em;
+  line-height: 1;
+  vertical-align: super;
+  padding: 0 0.2em;
+  color: #007aff;
+}
+
+aside[epub|type="footnote"],
+aside[role="doc-footnote"],
+.footnote {
+  font-size: 0.9em;
+  line-height: 1.5;
+  margin: 0.8em 0;
+  padding: 0.4em 0.8em;
+  border-top: 1px dashed rgba(0, 0, 0, 0.15);
+}
+
+@media (prefers-color-scheme: dark) {
+  aside[epub|type="footnote"],
+  aside[role="doc-footnote"],
+  .footnote {
+    border-top-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* 9. Images & Figures */
+figure {
+  margin: 1.5em 0;
+  text-align: center;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+figcaption, .caption {
+  font-size: 0.85em;
+  line-height: 1.4;
+  color: #666666;
+  text-align: center;
+  margin-top: 0.5em;
+  text-indent: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  figcaption, .caption {
+    color: #aaaaaa;
+  }
+}
+
+/* 10. Tables & Code Blocks */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  font-size: 0.9em;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+th, td {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.4em 0.6em;
+  text-align: left;
+}
+
+@media (prefers-color-scheme: dark) {
+  th, td {
+    border-color: rgba(255, 255, 255, 0.25);
+  }
+}
+
+pre, code {
+  font-family: "SF Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 0.88em;
+  background-color: rgba(0, 0, 0, 0.04);
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+@media (prefers-color-scheme: dark) {
+  pre, code {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+}
+
+/* 11. Page Layout & Multi-column Split Avoidance */
+.keep-together, .callout, .card {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+}

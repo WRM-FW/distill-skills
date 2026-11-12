@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display_options>
+  <platform name="*">
+    <!-- Allow custom fonts in EPUB to override Apple Books default lock -->
+    <option name="specified-fonts">true</option>
+    <!-- Enable standard two-page spread in landscape mode -->
+    <option name="open-to-spread">true</option>
+  </platform>
+</display_options>
