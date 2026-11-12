@@ -1,7 +1,5 @@
 # personal-library-wisdom
 
-> **✨Masterpiece** —— 仓库的核心代表作之一，入选依据见[仓库根 README](../../README.md#masterpiece)。
-
 上游 Skill：[仓颉 cangjie-skill](https://github.com/kangarooking/cangjie-skill) v2.5.0（`RIA-TV++` 流水线，MIT）　｜　许可：[PolyForm Noncommercial 1.0.0](LICENSE)　｜　版本：`v1.0.0`（标签 `personal-library-wisdom-v1.0.0`）　｜　版本记录：[CHANGELOG.md](CHANGELOG.md)
 
 个人书库的方法论索引：把 Google Drive「Library」里的 228 个蒸馏单元整理成 16 个主题簇，

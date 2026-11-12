@@ -1,7 +1,5 @@
 # logic-system
 
-> **✨Masterpiece** —— 仓库的核心代表作之一，入选依据见[仓库根 README](../../README.md#masterpiece)。
-
 上游 Skill：[仓颉 cangjie-skill](https://github.com/kangarooking/cangjie-skill)（`RIA-TV++` 流水线，MIT）　｜　许可：[PolyForm Noncommercial 1.0.0](LICENSE)　｜　版本：`v1.0.0`（标签 `logic-system-v1.0.0`）　｜　版本记录：[CHANGELOG.md](CHANGELOG.md)
 
 基于用户 Google Drive「逻辑学」文件夹 9 部著作与「Library」文件夹 11 部逻辑学相关著作（合计 20 部：
