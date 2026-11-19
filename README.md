@@ -3,7 +3,7 @@
 **个人 Agent Skill 统一管理仓库** —— 汇聚由经典书籍、专业课程、实用工具及人物语料中深度蒸馏的 Agent Skills。通过结构化与能力化沉淀，打造开箱即用的个人外脑知识资产。
 
 * **核心代表作**：`psychology-system`（心理学体系化技能）、`nsca-5th`（体能与力量训练科学）
-* **技能总数**：10 个（位于 [skills/](skills/) 目录）
+* **技能总数**：11 个（位于 [skills/](skills/) 目录）
 * **许可协议**：PolyForm Noncommercial 1.0.0（详见各 Skill 目录下的 `LICENSE` 文件）
 
 ---
@@ -21,6 +21,7 @@
 | **[nsca-5th](skills/nsca-5th/)** | **现代体能与科学训练旗舰**：含 VBT 速度监控、测力台、特殊人群与营养恢复 | NSCA《体能训练基础》第 5 版 | 周期化课表设计、%1RM/RIR 负荷计算、伤后康复、RED-S 营养评估 |
 | **[nsca-3rd](skills/nsca-3rd/)** | **经典体能与力量训练指南**：稳健的抗阻训练、爆发力、测试与场馆规划 | NSCA《体能训练基础》第 3 版 | 抗阻/增强式训练处方、动作技术与保护审计、DAPRE 康复 |
 | **[logic-system](skills/logic-system/)** | **全能逻辑推理与论证审计器**：从真值表、三段论到金字塔原理与博弈论 | 20 本中外逻辑学与博弈论经典 | 识别逻辑谬误、构建 MECE 金字塔结构、因果验证、法律与博弈分析 |
+| **[mao-tse-tung](skills/mao-tse-tung/)** | **认知与战略方法论系统**：矛盾分析、一手调查、弱者破局、组织治理 32 个可组合模块 | 《毛泽东选集》第 1–7 卷 372 篇文献 | 锁定主要矛盾、规划三阶段持久战、集中资源打歼灭战、组织整顿与复盘 |
 | **[personal-library-wisdom](skills/personal-library-wisdom/)** | **个人书库思想武器库**：跨越 16 个主题簇的 228 张书卡总索引与决策外脑 | 个人书库 246 个文件 / 228 单元 | 证据分级、成本收益与激励分析、战略复盘、中文写作与经典查证 |
 | **[persona-luoxiang](skills/persona-luoxiang/)** | **罗翔思维操作系统**：以刑法哲学与谦抑自省视角审视处境与判断漏洞 | 19 期读评论、22 篇经典讲读与 14 场访谈 | 换位思考、识别自身言行傲慢、道德与制度边界探讨 |
 | **[book-translator](skills/book-translator/)** | **出版级长文本与整书翻译引擎**：防翻译腔润色、术语统一与电子书排版 | 双引擎 8 阶段工业级翻译流水线 | 整书/长文稿多格式翻译、术语表管理、Apple Books/EPUB 3 排版 |
@@ -70,7 +71,14 @@
   * **干啥的**：基于 19 期读评论、22 篇经典讲读与 14 场访谈提炼的罗翔思维操作系统（6 个核心心智模型 + 10 条决策启发式）。
   * **什么时候用**：当你希望用“承认人的有限性、坚守良知与法治边界”的视角来审视一个现实处境、复盘自己的判断是否带有傲慢或双标时触发（例如说“用罗翔的视角看看这件事”）。
 
-### 5. 实用工程工具
+### 5. 战略与组织治理
+
+* **`mao-tse-tung`**
+  * **干啥的**：基于《毛泽东选集》第 1–7 卷（372 篇文献，1925–1976）的 32 模块方法论操作系统，分五层：认知与矛盾、调查与信息、竞争与博弈、心态与底线、组织与工作方法。
+  * **什么时候用**：多个问题交织、抓不住唯一主要矛盾；缺一手信息、报表看不出病因；小团队要正面破局；长周期事业在速进与躺平之间摇摆；多线程管理、制度推不动、组织风气败坏。
+  * **怎么用**：先按五层分诊，加载 1–3 张能力卡，把口号转译成张力对、好中差抽样表、三本账数字或资源调配清单，最后过一遍反零和、反斗争扩大化、反唯意志论三条边界自检。
+
+### 6. 实用工程工具
 
 * **`book-translator`**
   * **干啥的**：工业级长文本与书籍双引擎翻译系统（支持 PDF、DOCX、EPUB、Markdown、XHTML）。
@@ -89,6 +97,7 @@ distill-skills/
     ├── book-translator/              # 出版级整书翻译流水线
     ├── intimate-relationships-8th/   # 《亲密关系 第8版》关系诊断与修复
     ├── logic-system/                 # 全书系逻辑推理主路由
+    ├── mao-tse-tung/                 # 毛选 1-7 卷 32 模块方法论系统
     ├── nsca-3rd/                     # NSCA 第3版体能与力量训练
     ├── nsca-5th/                     # NSCA 第5版体能与力量训练（旗舰）
     ├── persona-luoxiang/             # 罗翔思维操作系统
@@ -116,7 +125,7 @@ cp -r distill-skills/skills/<skill-name> <你的 Agent Skill 目录>/
 
 **目录约定**：一个 Skill 一个目录，目录名与 `SKILL.md` 的 `name` 一致；每个目录含 `SKILL.md`、`README.md`、`CHANGELOG.md`、`LICENSE` 四件套，能力卡与脚本放在 `references/`、`scripts/`。
 
-**上游口径**：九个 Skill 由 [cangjie-skill](https://github.com/kangarooking/cangjie-skill)（MIT）蒸馏生成；
+**上游口径**：十个 Skill 由 [cangjie-skill](https://github.com/kangarooking/cangjie-skill)（MIT）蒸馏生成；
 `persona-luoxiang` 由 [Distilly](https://github.com/titanwings/distilly) 与 [nuwa-skill](https://github.com/alchaincyf/nuwa-skill)（均 MIT）生成；
 `book-translator` 为原创手写，无上游。上游只写作法来源，不影响本仓库的许可。
 
